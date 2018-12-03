@@ -1,8 +1,25 @@
 .u-transition-fade {
-    transition: 400ms;
+    transition: $global-transition-long;
     opacity: 1;
 
     html.is-animating & {
         opacity: 0;
+    }
+}
+
+.u-transition-zoom {
+    transition: $global-transition-long;
+    transform: none;
+
+    html.is-animating & {
+        transform: scale(0.9);
+    }
+
+    &--left {
+        transform-origin: center right;
+    }
+
+    &--right {
+        transform-origin: center left;
     }
 }
