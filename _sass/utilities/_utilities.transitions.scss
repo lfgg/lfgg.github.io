@@ -22,4 +22,8 @@
     &--right {
         transform-origin: center left;
     }
+
+    .o-grid__cell:nth-of-type(2):last-child & {
+        transition-delay: 50ms;
+    }
 }
