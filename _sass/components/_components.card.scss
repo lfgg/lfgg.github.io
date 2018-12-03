@@ -1,0 +1,41 @@
+.c-card {
+    margin-bottom: $spacing-large;
+    padding-top: $spacing-large;
+    padding-right: $spacing-large;
+    padding-bottom: $spacing-large;
+    padding-left: $spacing-large;
+
+    &__content {
+        margin-bottom: $spacing-large;
+    }
+
+    &--light {
+        color: $luigi-black;
+        background: $luigi-white;
+    }
+
+    &--dark {
+        color: $luigi-white;
+        background: $luigi-black;
+
+        .c-section--primary & {
+            background: $luigi-green-dark;
+        }
+
+        .c-section--secondary & {
+            background: $luigi-blue-dark;
+        }
+    }
+
+    &--centered {
+        text-align: center;
+
+        .c-card__content {
+            text-align: left;
+        }
+    }
+
+    &--equal-height {
+        height: calc(100% - #{$spacing-large});
+    }
+}

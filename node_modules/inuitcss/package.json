@@ -1,0 +1,81 @@
+{
+  "_from": "inuitcss",
+  "_id": "inuitcss@6.0.0",
+  "_inBundle": false,
+  "_integrity": "sha512-FnyXNy2WSzSli4INmgtrsFwkzDljabK583AoC7KZutB6m8bVrAzjZ7jadro4N4RcqQRpMlW88NwgHIWgD7CDrg==",
+  "_location": "/inuitcss",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "inuitcss",
+    "name": "inuitcss",
+    "escapedName": "inuitcss",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/inuitcss/-/inuitcss-6.0.0.tgz",
+  "_shasum": "164a2557736a29a9874f99c6165174d996ea6a53",
+  "_spec": "inuitcss",
+  "_where": "C:\\Users\\User\\Documents\\Work\\lfgg",
+  "author": {
+    "name": "Harry Roberts",
+    "email": "csswizardry@gmail.com"
+  },
+  "bugs": {
+    "url": "https://github.com/inuitcss/inuitcss/issues"
+  },
+  "bundleDependencies": false,
+  "contributors": [
+    {
+      "name": "Anselm Hannemann"
+    },
+    {
+      "name": "Dennis Heibült"
+    },
+    {
+      "name": "Florian Bouvot"
+    },
+    {
+      "name": "Nenad Jelovac"
+    }
+  ],
+  "dependencies": {
+    "sass-mq": "^3.3.2"
+  },
+  "deprecated": false,
+  "description": "Extensible, scalable, Sass-based, OOCSS framework for large and long-lasting UI projects.",
+  "devDependencies": {
+    "glob": "^7.1.2",
+    "mocha": "^3.5.2",
+    "node-sass": "^4.5.3",
+    "sass-true": "^3.0.0",
+    "stylelint": "^8.1.1",
+    "stylelint-scss": "^2.1.0"
+  },
+  "homepage": "https://github.com/inuitcss/inuitcss#readme",
+  "keywords": [
+    "oocss",
+    "sass",
+    "bem",
+    "itcss",
+    "css"
+  ],
+  "license": "Apache-2.0",
+  "main": "example.main.scss",
+  "name": "inuitcss",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/inuitcss/inuitcss.git"
+  },
+  "scripts": {
+    "lint": "stylelint \"**/*.scss\" --syntax scss",
+    "test": "npm run lint && mocha test/run.js"
+  },
+  "version": "6.0.0"
+}

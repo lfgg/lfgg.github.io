@@ -1,0 +1,27 @@
+input[type=text],
+input[type=search],
+input[type=email],
+textarea,
+select {
+    display: block;
+    margin-bottom: $spacing;
+    padding-top: $spacing-small;
+    padding-right: $spacing;
+    padding-bottom: $spacing-small;
+    padding-left: $spacing;
+    border: 0;
+    outline: 0;
+    background: $luigi-white;
+    transition: $global-transition;
+
+    &:focus,
+    &:active {
+        appearance: none;
+        box-shadow: 0 0 0 4px rgba(white, 0.25);
+    }
+}
+
+input,
+button {
+    font-family: Raleway, sans-serif;
+}

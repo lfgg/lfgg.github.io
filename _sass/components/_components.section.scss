@@ -1,0 +1,35 @@
+.c-section {
+    padding-top: $spacing-huge;
+    padding-right: $spacing;
+    padding-bottom: $spacing-huge;
+    padding-left: $spacing;
+
+    &__title {
+        margin-bottom: $spacing-large;
+        text-align: center;
+    }
+
+    &:first-of-type {
+        padding-top: $spacing-large + $spacing;
+    }
+
+    &--primary {
+        background: $luigi-green;
+    }
+
+    &--secondary {
+        background: $luigi-blue;
+    }
+
+    &--tertiary {
+        background: $luigi-brown;
+    }
+
+    &--subscribe {
+        border-top: $spacing-small solid $luigi-brown-dark;
+
+        a {
+            color: $luigi-yellow;
+        }
+    }
+}

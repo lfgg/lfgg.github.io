@@ -1,0 +1,74 @@
+---
+---
+
+// SETTINGS
+$inuit-global-font-size: 18px;
+$inuit-global-baseline: 7px;
+@import "../node_modules/inuitcss/settings/settings.core";
+@import "settings/settings.global";
+@import "settings/settings.colors";
+
+// TOOLS
+@import "../node_modules/inuitcss/tools/tools.font-size";
+@import "../node_modules/inuitcss/tools/tools.clearfix";
+@import "../node_modules/inuitcss/tools/tools.hidden";
+@import "../node_modules/sass-mq/mq";
+
+// GENERIC
+@import "../node_modules/inuitcss/generic/generic.reset";
+@import "../node_modules/inuitcss/generic/generic.box-sizing";
+@import "../node_modules/inuitcss/generic/generic.normalize";
+@import "../node_modules/inuitcss/generic/generic.shared";
+@import "generic/generic.fonts";
+
+// ELEMENTS
+$inuit-font-size-h1: 48px !default;
+$inuit-font-size-h2: 32px !default;
+$inuit-font-size-h3: 24px !default;
+$inuit-font-size-h4: 20px !default;
+$inuit-font-size-h5: 18px !default;
+$inuit-font-size-h6: 16px !default;
+@import "../node_modules/inuitcss/elements/elements.page";
+@import "../node_modules/inuitcss/elements/elements.headings";
+@import "elements/elements.headings";
+@import "../node_modules/inuitcss/elements/elements.images";
+@import "../node_modules/inuitcss/elements/elements.tables";
+@import "elements/elements.page";
+@import "elements/elements.links";
+@import "elements/elements.forms";
+
+// OBJECTS
+@import "../node_modules/inuit-flexgrid/objects/objects.grid";
+@import "objects/objects.grid";
+@import "../node_modules/inuitcss/objects/objects.wrapper";
+@import "objects/objects.wrapper";
+@import "../node_modules/inuitcss/objects/objects.media";
+@import "../node_modules/inuitcss/objects/objects.flag";
+@import "../node_modules/inuitcss/objects/objects.list-bare";
+@import "../node_modules/inuitcss/objects/objects.list-inline";
+@import "../node_modules/inuitcss/objects/objects.box";
+@import "../node_modules/inuitcss/objects/objects.block";
+@import "../node_modules/inuitcss/objects/objects.table";
+@import "../node_modules/inuitcss/objects/objects.crop";
+@import "../node_modules/inuitcss/objects/objects.pack";
+@import "objects/objects.nav";
+
+// COMPONENTS
+@import "components/components.buttons";
+@import "components/components.icon";
+@import "components/components.site-nav";
+@import "components/components.page-head";
+@import "components/components.section";
+@import "components/components.card";
+@import "components/components.promo";
+@import "components/components.form";
+@import "components/components.input-group";
+@import "components/components.article";
+@import "components/components.page-foot";
+
+// UTILITIES
+@import "../node_modules/inuitcss/utilities/utilities.widths";
+@import "../node_modules/inuitcss/utilities/utilities.headings";
+@import "../node_modules/inuitcss/utilities/utilities.spacings";
+@import "../node_modules/inuitcss/utilities/utilities.hide";
+@import "utilities/utilities.text";

@@ -1,0 +1,27 @@
+.c-promo {
+    &__title {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .c-icon--emblem {
+            margin-right: $spacing-small;
+
+            svg {
+                fill: $luigi-green-dark;
+            }
+        }
+    }
+
+    &__content {
+        margin-bottom: $spacing-large;
+    }
+
+    &--important {
+        background: $luigi-blue !important;
+
+        .c-icon--emblem svg {
+            fill: $luigi-blue;
+        }
+    }
+}

@@ -1,0 +1,22 @@
+.c-site-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: $luigi-green-light;
+
+    &__item {
+        padding: $spacing;
+        text-transform: uppercase;
+        font-weight: 700;
+        color: $luigi-green-darker;
+
+        .c-icon {
+            fill: $luigi-green-darker;
+        }
+
+        &:hover,
+        &:focus {
+            background: lighten($luigi-green-light, 5%);
+        }
+    }
+}

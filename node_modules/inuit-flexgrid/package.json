@@ -1,0 +1,52 @@
+{
+  "_from": "inuit-flexgrid",
+  "_id": "inuit-flexgrid@0.4.0",
+  "_inBundle": false,
+  "_integrity": "sha512-+77taCh5aXkqQIIYqKs4D+aCKX+/RZnefxDO7zFArOIO8ICPXNRdcVQvSdG2OMVeXF/q5jlrMwQEOXZ7peKihA==",
+  "_location": "/inuit-flexgrid",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "inuit-flexgrid",
+    "name": "inuit-flexgrid",
+    "escapedName": "inuit-flexgrid",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/inuit-flexgrid/-/inuit-flexgrid-0.4.0.tgz",
+  "_shasum": "046187910bfea64d46efab7b4390d962c8f10232",
+  "_spec": "inuit-flexgrid",
+  "_where": "C:\\Users\\User\\Documents\\Work\\lfgg",
+  "author": {
+    "name": "nicoqh",
+    "email": "nicoqh@gmail.com"
+  },
+  "bugs": {
+    "url": "https://github.com/nicoqh/inuit-flexgrid/issues"
+  },
+  "bundleDependencies": false,
+  "deprecated": false,
+  "description": "Flexbox grid for inuitcss.",
+  "homepage": "https://github.com/nicoqh/inuit-flexgrid#readme",
+  "keywords": [
+    "flexbox",
+    "grid",
+    "inuit",
+    "inuit-flexgrid",
+    "inuitcss"
+  ],
+  "license": "MIT",
+  "main": "objects/_objects.grid.scss",
+  "name": "inuit-flexgrid",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nicoqh/inuit-flexgrid.git"
+  },
+  "version": "0.4.0"
+}

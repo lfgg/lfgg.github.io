@@ -1,0 +1,9 @@
+.c-article {
+    @extend .c-card;
+    @extend .c-card--light;
+    margin-bottom: $spacing-large;
+
+    &--single {
+        margin-bottom: 0;
+    }
+}

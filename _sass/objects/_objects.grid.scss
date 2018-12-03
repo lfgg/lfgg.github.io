@@ -1,0 +1,13 @@
+.o-grid {
+    &--middle {
+        align-items: center;
+    }
+
+    &__cell {
+        &--switch-mobile {
+            @include mq($until: tablet) {
+                order: -1;
+            }
+        }
+    }
+}

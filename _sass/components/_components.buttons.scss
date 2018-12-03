@@ -1,0 +1,23 @@
+.c-btn {
+    display: inline-block;
+    padding-top: $spacing-small;
+    padding-right: $spacing-large;
+    padding-bottom: $spacing-small;
+    padding-left: $spacing-large;
+    text-align: center;
+    text-transform: uppercase;
+    line-height: $inuit-global-line-height / $inuit-global-font-size;
+    font-weight: 700;
+    border: 0;
+    background: $luigi-yellow;
+    box-shadow: inset 0 0 0 $spacing-small $luigi-yellow;
+    color: $luigi-brown;
+    transition: $global-transition;
+    cursor: pointer;
+
+    &:hover,
+    &:focus {
+        background: $luigi-white;
+        box-shadow: inset 0 0 0 4px $luigi-yellow;
+    }
+}
