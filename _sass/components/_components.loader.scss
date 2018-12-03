@@ -1,0 +1,52 @@
+@keyframes bounce {
+  0%, 90% {
+    animation-timing-function: linear;
+  }
+  10% {
+    animation-timing-function: cubic-bezier(0, 0.4, 0.6, 1);
+  }
+  50% {
+    animation-timing-function: cubic-bezier(0.4, 0, 1, 0.6);
+  }
+  0% {
+    transform: translate(0%, 30%) scaleY(0.5);
+  }
+  10% {
+    transform: translate(0%, 5%) scaleY(1.1);
+  }
+  50% {
+    transform: translate(0%, -37%) scaleY(1.1);
+  }
+  90% {
+    transform: translate(0%, 5%) scaleY(1.1);
+  }
+  100% {
+    transform: translate(0%, 30%) scaleY(0.5);
+  }
+}
+
+.c-loader {
+    position: fixed;
+    pointer-events: none;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 200ms;
+
+    html.is-animating & {
+        opacity: 1;
+    }
+
+    &__img {
+        position: absolute;
+        left: 50%;
+        top: calc(50% + 4rem);
+        width: $spacing-huge;
+        height: $spacing-huge;
+        margin-left: -$spacing-huge/2;
+        background: url(/assets/img/luigi-hat.svg) no-repeat center center / contain;
+        animation: bounce 500ms infinite;
+    }
+}

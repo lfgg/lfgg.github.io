@@ -54,6 +54,7 @@ $inuit-font-size-h6: 16px !default;
 @import "objects/objects.nav";
 
 // COMPONENTS
+@import "components/components.loader";
 @import "components/components.buttons";
 @import "components/components.icon";
 @import "components/components.site-nav";
@@ -72,3 +73,4 @@ $inuit-font-size-h6: 16px !default;
 @import "../node_modules/inuitcss/utilities/utilities.spacings";
 @import "../node_modules/inuitcss/utilities/utilities.hide";
 @import "utilities/utilities.text";
+@import "utilities/utilities.transitions";

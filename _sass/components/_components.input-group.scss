@@ -8,9 +8,11 @@
         margin-bottom: 0 !important;
         position: relative;
         z-index: 1;
+        //border-radius: $spacing-large 0 0 $spacing-large;
     }
 
     &__btn {
         flex: 0 1 auto;
+        //border-radius: 0 $spacing-large $spacing-large 0;
     }
 }
