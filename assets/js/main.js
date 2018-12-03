@@ -14,6 +14,10 @@ const Page = {
             this.elems.loader.parentNode.replaceChild(newLoader, this.elems.loader);
             this.elems.loader = newLoader;
         });
+
+        window.addEventListener('load', () => {
+            document.documentElement.classList.remove('is-animating');
+        });
     }
 }
 
