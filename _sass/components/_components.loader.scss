@@ -80,11 +80,11 @@
 
     &__img {
         position: absolute;
-        left: 50%;
-        top: calc(50% + 4rem);
-        width: $spacing-huge;
-        height: $spacing-huge;
-        margin-left: -$spacing-huge/2;
+        right: $spacing;
+        bottom: $spacing;
+        width: $spacing-large;
+        height: $spacing-large;
+        //margin-left: -$spacing-huge/2;
         background: url(/assets/img/luigi-hat.svg) no-repeat center center / contain;
         animation: rubberBand 1000ms infinite;
     }
