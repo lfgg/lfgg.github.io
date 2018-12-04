@@ -57,24 +57,28 @@ const Page = {
             Nav.close();
 
             // Show loader if page load takes a bit
-            setTimeout(() => {
-                if (document.documentElement.classList.contains('is-animating')) {
+            //this.elems.loader.style.opacity = 0;
+            //setTimeout(() => {
+            //    if (document.documentElement.classList.contains('is-animating')) {
                     // Replace loader so animation restarts
                     let newLoader = this.elems.loader.cloneNode(true);
                     this.elems.loader.parentNode.replaceChild(newLoader, this.elems.loader);
                     this.elems.loader = newLoader;
-                    this.elems.loader.style.opacity = 1;
-                }
-            }, 1000);
+            //        this.elems.loader.style.opacity = 1;
+            //    } else {
+            //        this.elems.loader.style.opacity = 0;
+            //    }
+            //}, 1000);
         });
 
-        swup.on('animationInDone', () => {
+        /*swup.on('animationInDone', () => {
             this.elems.loader.style.opacity = 0;
-        });
+        });*/
 
         window.addEventListener('load', () => {
-            document.documentElement.classList.remove('is-animating');
-            this.elems.loader.style.opacity = 0;
+            setTimeout(() => {
+                document.documentElement.classList.remove('is-animating');
+            }, 500);
         });
     }
 }
