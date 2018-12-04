@@ -14,6 +14,10 @@
     transition: $global-transition-long;
     outline: 0;
 
+    @include mq($from: desktop) {
+        display: none;
+    }
+
     .nav-open & {
         position: fixed;
         background: $luigi-green-dark;
