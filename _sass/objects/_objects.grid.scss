@@ -10,4 +10,16 @@
             }
         }
     }
+
+    &--large {
+        @include mq($until: tablet) {
+            margin-left: -$spacing;
+        }
+
+        > .o-grid__cell {
+            @include mq($until: tablet) {
+                padding-left: $spacing;
+            }
+        }
+    }
 }

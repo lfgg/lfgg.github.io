@@ -1,9 +1,10 @@
 .c-card {
     margin-bottom: $spacing-large;
-    padding-top: $spacing-large;
-    padding-right: $spacing-large;
-    padding-bottom: $spacing-large;
-    padding-left: $spacing-large;
+    padding: $spacing;
+
+    @include mq($from: tablet) {
+        padding: $spacing-large;
+    }
 
     &__content {
         margin-bottom: $spacing-large;
