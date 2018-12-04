@@ -6,28 +6,40 @@ const Nav = {
 
     isOpen: false,
 
+    toggle: function() {
+        document.documentElement.classList.toggle('nav-open');
+        this.isOpen = !this.isOpen;
+    },
+
+    open: function() {
+        document.documentElement.classList.add('nav-open');
+        this.isOpen = true;
+    },
+
+    close: function() {
+        document.documentElement.classList.remove('nav-open');
+        this.isOpen = false;
+    },
+
     init: function() {
         this.elems.toggle.addEventListener('click', (e) => {
             e.preventDefault();
-            document.documentElement.classList.toggle('nav-open');
-            this.isOpen = !this.isOpen;
+            this.toggle();
         });
 
         window.addEventListener('resize', (e) => {
-            document.documentElement.classList.remove('nav-open');
-            this.isOpen = false;
+            this.close();
         });
 
         this.elems.site.addEventListener('click', (e) => {
             if (this.isOpen) {
-                document.documentElement.classList.remove('nav-open');
-                this.isOpen = false;
+                this.close();
             }
         });
     }
 }
-
 Nav.init();
+
 
 const Page = {
     elems: {
@@ -41,6 +53,9 @@ const Page = {
         });
 
         swup.on('animationOutStart', () => {
+            // Hide mobile menu
+            Nav.close();
+
             // Show loader if page load takes a bit
             setTimeout(() => {
                 if (document.documentElement.classList.contains('is-animating')) {
@@ -63,5 +78,4 @@ const Page = {
         });
     }
 }
-
 Page.init();
