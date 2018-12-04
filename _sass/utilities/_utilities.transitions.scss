@@ -1,5 +1,5 @@
 .u-transition-fade {
-    transition: $global-transition-long;
+    transition: $global-transition;
     opacity: 1;
 
     html.is-animating & {
@@ -8,7 +8,7 @@
 }
 
 .u-transition-zoom {
-    transition: $global-transition-long;
+    transition: $global-transition;
     transform: none;
 
     html.is-animating & {

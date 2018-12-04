@@ -8,7 +8,11 @@
     }
 
     &:first-of-type {
-        padding-top: $spacing-large + $spacing;
+        padding-top: $spacing-large;
+
+        @include mq($from: tablet) {
+            padding-top: $spacing-large + $spacing;
+        }
     }
 
     &--primary {

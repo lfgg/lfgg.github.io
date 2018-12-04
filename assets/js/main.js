@@ -1,3 +1,18 @@
+const Nav = {
+    elems: {
+        toggle: document.querySelector('#toggle-nav')
+    },
+
+    init: function() {
+        this.elems.toggle.addEventListener('click', (e) => {
+            e.preventDefault();
+            document.body.classList.toggle('nav-open');
+        });
+    }
+}
+
+Nav.init();
+
 const Page = {
     elems: {
         loader: document.querySelector('#loader')

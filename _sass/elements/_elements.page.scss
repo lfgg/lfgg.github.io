@@ -3,3 +3,9 @@ html {
     color: $luigi-white;
     background: $luigi-green;
 }
+
+body {
+    &.nav-open {
+        //overflow: hidden;
+    }
+}

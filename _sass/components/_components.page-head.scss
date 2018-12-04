@@ -1,6 +1,10 @@
-.c-page-head {
-    padding-top: $spacing-large;
-    text-align: center;
+.c-page-head {    
+    padding-top: $spacing;
+    
+    @include mq($from: tablet) {
+        padding-top: $spacing-large;
+        text-align: center;
+    }
 
     &__logo {
         max-width: 200px;

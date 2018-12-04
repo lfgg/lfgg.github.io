@@ -1,0 +1,31 @@
+.c-toggle-nav {
+    display: block;
+    padding: $spacing-small;
+    position: absolute;
+    top: $spacing-large;
+    right: $spacing;
+    z-index: 100;
+    border: 0;
+    background: $luigi-green-light;
+    color: $luigi-green-darker;
+    font-size: $inuit-font-size-h6;
+    font-weight: 700;
+    text-transform: uppercase;
+    transition: $global-transition-long;
+    outline: 0;
+
+    .nav-open & {
+        position: fixed;
+        background: $luigi-green-dark;
+        color: $luigi-white;
+        transform: translateY(-$spacing);
+    }
+
+    &:before {
+        content: "Menu";
+
+        .nav-open & {
+            content: "Close";
+        }
+    }
+}
