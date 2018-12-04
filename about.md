@@ -4,10 +4,10 @@ layout: page
 
 <div class="o-grid o-grid--large">
     <div class="o-grid__cell u-1/1 u-1/4@tablet">
-        <img alt="Luigi looking creepy in 3D" src="/assets/img/luigi/its-alive.png">
+        <img alt="Luigi looking creepy in 3D" src="/assets/img/luigi/its-alive.png" class="c-luigi-img">
     </div>
 
-    <div class="o-grid__cell u-1/1 u-3/4@tablet">
+    <div class="o-grid__cell o-grid__cell--switch-mobile u-1/1 u-3/4@tablet">
         <h1>About LFGG</h1>
         <p>Luigi's Fan Game Gallery is a community dedicated to preserving and further developing the art of fan games. With our wide variety of skills and passions, we aim to bring each other's projects to life. We welcome contributors of any kind, including programmers, artists, musicians, writers, critics, and anyone else with great ideas. People of all skill levels are encouraged to join and hone their talents.</p>
 
