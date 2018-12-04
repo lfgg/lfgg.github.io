@@ -65,7 +65,7 @@ const Page = {
                     this.elems.loader = newLoader;
                     this.elems.loader.style.opacity = 1;
                 }
-            }, 500);
+            }, 1000);
         });
 
         swup.on('animationInDone', () => {

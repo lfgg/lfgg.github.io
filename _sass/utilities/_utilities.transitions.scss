@@ -1,29 +1,39 @@
 .u-transition-fade {
-    transition: $global-transition;
+    transition: $global-transition-long;
+    transform: none;
     opacity: 1;
 
     html.is-animating & {
+        transform: translateY($spacing);
         opacity: 0;
     }
 }
 
 .u-transition-zoom {
-    transition: $global-transition;
+    transition: $global-transition-long;
     transform: none;
 
     html.is-animating & {
-        transform: scale(0.9);
+        transform: scale(0.85);
+    }
+
+    &.c-page-main {
+        transform-origin: top center;
     }
 
     &--left {
-        transform-origin: center right;
+        @include mq($from: tablet) {
+            transform-origin: center right;
+        }
     }
 
     &--right {
-        transform-origin: center left;
+        @include mq($from: tablet) {
+            transform-origin: center left;
+        }
     }
 
     .o-grid__cell:nth-of-type(2):last-child & {
-        transition-delay: 50ms;
+        transition-delay: 100ms;
     }
 }
