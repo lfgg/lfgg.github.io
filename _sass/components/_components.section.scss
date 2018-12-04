@@ -1,6 +1,11 @@
 .c-section {
-    padding-top: $spacing-huge;
-    padding-bottom: $spacing-huge;
+    padding-top: $spacing-large;
+    padding-bottom: $spacing-large;
+
+    @include mq($from: tablet) {
+        padding-top: $spacing-huge;
+        padding-bottom: $spacing-huge;
+    }
 
     &__title {
         margin-bottom: $spacing-large;

@@ -1,7 +1,14 @@
 html {
     font-family: Raleway, sans-serif;
+    font-size: ($inuit-global-font-size-mobile / 16px) * 1em;
+    line-height: $inuit-global-line-height / $inuit-global-font-size;
     color: $luigi-white;
     background: $luigi-green;
+
+    @include mq($from: tablet) {
+        font-size: ($inuit-global-font-size / 16px) * 1em;
+        line-height: $inuit-global-line-height / $inuit-global-font-size;
+    }
 
     &.nav-open {
         overflow: hidden;

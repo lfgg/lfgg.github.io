@@ -1,16 +1,28 @@
 const Nav = {
     elems: {
-        toggle: document.querySelector('#toggle-nav')
+        toggle: document.querySelector('#toggle-nav'),
+        site: document.querySelector('#site')
     },
+
+    isOpen: false,
 
     init: function() {
         this.elems.toggle.addEventListener('click', (e) => {
             e.preventDefault();
             document.documentElement.classList.toggle('nav-open');
+            this.isOpen = !this.isOpen;
         });
 
-        window.addEventListener('resize', () => {
+        window.addEventListener('resize', (e) => {
             document.documentElement.classList.remove('nav-open');
+            this.isOpen = false;
+        });
+
+        this.elems.site.addEventListener('click', (e) => {
+            if (this.isOpen) {
+                document.documentElement.classList.remove('nav-open');
+                this.isOpen = false;
+            }
         });
     }
 }

@@ -3,6 +3,7 @@
 
 // SETTINGS
 $inuit-global-font-size: 18px;
+$inuit-global-font-size-mobile: 16px;
 $inuit-global-baseline: 7px;
 @import "../node_modules/inuitcss/settings/settings.core";
 @import "settings/settings.global";
@@ -49,8 +50,8 @@ $inuit-font-size-h6: 16px !default;
 @import "../node_modules/inuitcss/objects/objects.box";
 @import "../node_modules/inuitcss/objects/objects.block";
 @import "../node_modules/inuitcss/objects/objects.table";
-@import "../node_modules/inuitcss/objects/objects.crop";
-@import "../node_modules/inuitcss/objects/objects.pack";
+//@import "../node_modules/inuitcss/objects/objects.crop";
+//@import "../node_modules/inuitcss/objects/objects.pack";
 @import "objects/objects.nav";
 
 // COMPONENTS
@@ -66,12 +67,22 @@ $inuit-font-size-h6: 16px !default;
 @import "components/components.form";
 @import "components/components.input-group";
 @import "components/components.article";
+@import "components/components.luigi-img";
 @import "components/components.page-foot";
 
 // UTILITIES
 @import "../node_modules/inuitcss/utilities/utilities.widths";
 @import "../node_modules/inuitcss/utilities/utilities.headings";
 @import "../node_modules/inuitcss/utilities/utilities.spacings";
+$inuit-responsive-spacing-directions: (
+  null: null,
+  "-bottom": "-bottom",
+);
+$inuit-responsive-spacing-properties: (
+  "margin": "margin",
+);
+$inuit-responsive-spacing-sizes: $inuit-spacing-sizes !default;
+@import "../node_modules/inuitcss/utilities/utilities.responsive-spacings";
 @import "../node_modules/inuitcss/utilities/utilities.hide";
 @import "utilities/utilities.text";
 @import "utilities/utilities.transitions";
