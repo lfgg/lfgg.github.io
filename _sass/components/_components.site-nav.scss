@@ -4,6 +4,7 @@
     right: 0;
     bottom: 0;
     width: 75vw;
+    padding-top: $spacing;
     transform: translateX(75vw);
     transition: transform 400ms ease-in-out;
     background: $luigi-green-light;
@@ -15,14 +16,22 @@
         transform: none;
         position: relative;
         width: auto;
+        padding-top: 0;
     }
 
     &__item {
         display: block;
-        padding: $spacing;
+        padding-top: $spacing-small;
+        padding-right: $spacing;
+        padding-bottom: $spacing-small;
+        padding-left: $spacing;
         text-transform: uppercase;
         font-weight: 700;
         color: $luigi-green-darker;
+
+        @include mq($from: tablet) {
+            padding: $spacing;
+        }
 
         .c-icon {
             fill: $luigi-green-darker;

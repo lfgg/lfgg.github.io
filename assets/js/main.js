@@ -6,7 +6,11 @@ const Nav = {
     init: function() {
         this.elems.toggle.addEventListener('click', (e) => {
             e.preventDefault();
-            document.body.classList.toggle('nav-open');
+            document.documentElement.classList.toggle('nav-open');
+        });
+
+        window.addEventListener('resize', () => {
+            document.documentElement.classList.remove('nav-open');
         });
     }
 }
@@ -25,13 +29,25 @@ const Page = {
         });
 
         swup.on('animationOutStart', () => {
-            let newLoader = this.elems.loader.cloneNode(true);
-            this.elems.loader.parentNode.replaceChild(newLoader, this.elems.loader);
-            this.elems.loader = newLoader;
+            // Show loader if page load takes a bit
+            setTimeout(() => {
+                if (document.documentElement.classList.contains('is-animating')) {
+                    // Replace loader so animation restarts
+                    let newLoader = this.elems.loader.cloneNode(true);
+                    this.elems.loader.parentNode.replaceChild(newLoader, this.elems.loader);
+                    this.elems.loader = newLoader;
+                    this.elems.loader.style.opacity = 1;
+                }
+            }, 500);
+        });
+
+        swup.on('animationInDone', () => {
+            this.elems.loader.style.opacity = 0;
         });
 
         window.addEventListener('load', () => {
             document.documentElement.classList.remove('is-animating');
+            this.elems.loader.style.opacity = 0;
         });
     }
 }
