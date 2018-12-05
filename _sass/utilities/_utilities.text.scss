@@ -1,3 +1,11 @@
 .u-text-center {
     text-align: center;
 }
+
+.u-text-huge {
+    @include inuit-font-size(64px);
+
+    @include mq($from: tablet) {
+        @include inuit-font-size(128px);
+    }
+}
