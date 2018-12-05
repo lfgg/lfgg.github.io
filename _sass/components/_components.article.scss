@@ -6,4 +6,32 @@
     &--single {
         margin-bottom: 0;
     }
+
+    &__header {
+        position: relative;
+        margin-bottom: $spacing-large;
+        padding-bottom: $spacing;
+        text-align: center;
+
+        &:after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            margin-left: -25%;
+            width: 50%;
+            height: $spacing-tiny;
+            background: $luigi-yellow;
+        }
+    }
+
+    &__title {
+        color: $luigi-blue;
+    }
+
+    &__meta {
+        color: $luigi-gray-dark;
+
+        @include inuit-font-size($inuit-font-size-h3);
+    }
 }

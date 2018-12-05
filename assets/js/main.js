@@ -83,3 +83,15 @@ const Page = {
     }
 }
 Page.init();
+
+
+const Parallax = {
+    settings: {
+        speed: -6
+    },
+
+    init: function() {
+        var rellax = new Rellax('.c-parallax__item', this.settings);
+    }
+}
+Parallax.init();
