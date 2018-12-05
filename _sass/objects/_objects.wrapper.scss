@@ -2,4 +2,13 @@
     &--small {
         max-width: 840px;
     }
+
+    &--large {
+        padding: 0;
+
+        @include mq($from: tablet) {
+            padding-left: $spacing;
+            padding-right: $spacing;
+        }
+    }
 }

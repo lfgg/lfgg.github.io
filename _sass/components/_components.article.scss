@@ -9,9 +9,14 @@
 
     &__header {
         position: relative;
-        margin-bottom: $spacing-large;
         padding-bottom: $spacing;
+        margin-bottom: $spacing-large;
+        
         text-align: center;
+
+        @include mq($from: tablet) {
+            padding-bottom: $spacing-large;
+        }
 
         &:after {
             content: '';
@@ -21,7 +26,7 @@
             margin-left: -25%;
             width: 50%;
             height: $spacing-tiny;
-            background: $luigi-yellow;
+            background: $luigi-gray-light;
         }
     }
 
@@ -30,8 +35,11 @@
     }
 
     &__meta {
+        margin-bottom: 0;
+        text-transform: uppercase;
+        font-weight: 700;
         color: $luigi-gray-dark;
 
-        @include inuit-font-size($inuit-font-size-h3);
+        //@include inuit-font-size($inuit-font-size-h3);
     }
 }
