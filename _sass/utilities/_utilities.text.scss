@@ -6,6 +6,6 @@
     @include inuit-font-size(64px);
 
     @include mq($from: tablet) {
-        @include inuit-font-size(128px);
+        @include inuit-font-size(96px);
     }
 }
