@@ -86,3 +86,19 @@ $inuit-responsive-spacing-sizes: $inuit-spacing-sizes !default;
 @import "../node_modules/inuitcss/utilities/utilities.hide";
 @import "utilities/utilities.text";
 @import "utilities/utilities.transitions";
+
+
+/*.c-site {
+    width: 100vw;
+    overflow-x: hidden;
+}
+.c-parallax {
+    position: absolute;
+    top: 0;
+    right: -5vw;
+    width: 30vw;
+    height: 30vw;
+    background: url(/assets/img/parallax/mushroom.svg) no-repeat center center / contain;
+    opacity: 0.1;
+    z-index: -1;
+}*/
