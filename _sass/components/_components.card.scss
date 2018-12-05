@@ -1,6 +1,7 @@
 .c-card {
     margin-bottom: $spacing-large;
     padding: $spacing;
+    border-radius: $global-radius;
 
     @include mq($from: tablet) {
         padding: $spacing-large;

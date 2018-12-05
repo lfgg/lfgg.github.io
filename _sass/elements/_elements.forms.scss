@@ -10,6 +10,7 @@ select {
     padding-bottom: $spacing-small;
     padding-left: $spacing;
     border: 0;
+    border-radius: $global-radius;
     outline: 0;
     background: $luigi-white;
     transition: $global-transition;
