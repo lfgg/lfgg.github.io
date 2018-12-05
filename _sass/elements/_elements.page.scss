@@ -13,4 +13,8 @@ html {
     &.nav-open {
         overflow: hidden;
     }
+
+    &.is-preload * {
+        transition: none 0s !important;
+    }
 }

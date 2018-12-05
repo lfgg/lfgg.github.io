@@ -77,7 +77,7 @@ const Page = {
 
         window.addEventListener('load', () => {
             setTimeout(() => {
-                document.documentElement.classList.remove('is-animating');
+                document.documentElement.classList.remove('is-animating', 'is-preload');
             }, 500);
         });
     }
