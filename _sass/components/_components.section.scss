@@ -28,6 +28,26 @@
 
     &--secondary {
         background: $luigi-blue;
+
+        &:before {
+            content: '';
+            position: absolute;
+            top: $spacing;
+            left: 0;
+            right: 0;
+            height: 0;
+            border-bottom: 4px dashed lighten($luigi-blue, 5%);
+        }
+
+        &:after {
+            content: '';
+            position: absolute;
+            bottom: $spacing;
+            left: 0;
+            right: 0;
+            height: 0;
+            border-top: 4px dashed lighten($luigi-blue, 5%);
+        }
     }
 
     &--tertiary {

@@ -6,15 +6,7 @@
 
         <ul class="o-grid o-grid--large u-margin-bottom-none">
             {% for post in site.categories.newsletter limit:3 %}
-                <li class="o-grid__cell u-1/1 u-1/2@desktop">
-                    <article class="c-card c-card--dark c-card--equal-height">
-                        <h3>{{ post.title }}</h3>
-                        <div class="c-card__content">
-                            {{ post.excerpt }}
-                        </div>
-                        <a class="c-btn" href="{{ post.url }}">Read now</a>
-                    </article>
-                </li>
+                {% include article-card.html title=post.title excerpt=post.excerpt url=post.url %}
             {% endfor %}
         </ul>
 
