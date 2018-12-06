@@ -5,6 +5,12 @@
 
     &--single {
         margin-bottom: 0;
+
+        @include mq($from: desktop) {
+            padding-left: $spacing-huge;
+            padding-right: $spacing-huge;
+            @include inuit-font-size(20px);
+        }
     }
 
     &__header {
@@ -36,10 +42,20 @@
 
     &__meta {
         margin-bottom: 0;
-        text-transform: uppercase;
         font-weight: 700;
         color: $luigi-gray-dark;
 
         //@include inuit-font-size($inuit-font-size-h3);
+    }
+
+    &__signature {
+        margin-top: $spacing-large;
+        text-align: center;
+
+        > img {
+            display: inline-block;
+            height: $spacing-huge;
+            width: auto;
+        }
     }
 }
