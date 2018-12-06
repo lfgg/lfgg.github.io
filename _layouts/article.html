@@ -2,7 +2,7 @@
 layout: default
 ---
 
-<section id="page-content" class="c-section c-section--primary c-page-content">
+<section id="page-content" class="c-section c-section--primary c-page-content u-padding-bottom">
     <div class="o-wrapper o-wrapper--large">
         <div class="o-grid o-grid--large u-margin-bottom">
             <div class="o-grid__cell u-1/1">
@@ -18,6 +18,16 @@ layout: default
                         <img alt="Luigi waving" src="/assets/img/luigi/luigi-wave.svg">
                     </div>
                 </article>
+                <aside class="c-related-posts">
+                    <h2 class="u-margin-bottom-large u-text-center u-h1">Related Posts</h2>
+                    <div class="o-grid o-grid--large">
+                        {% for post in site.categories.newsletter limit:2 %}
+                        <section class="o-grid__cell u-1/1 u-1/2@desktop">
+                        {% include article-card.html title=post.title excerpt=post.excerpt url=post.url dark=true %}
+                        </section>
+                        {% endfor %}
+                    </div>
+                </aside>
             </div>
         </div>
     </div>

@@ -2,6 +2,8 @@
     margin-bottom: $spacing-large;
     padding: $spacing;
     border-radius: $global-radius;
+    background: $luigi-white;
+    color: $luigi-black;
 
     @include mq($from: tablet) {
         padding: $spacing-large;
@@ -14,6 +16,13 @@
     &--light {
         color: $luigi-black;
         background: $luigi-white;
+        
+        h1, h2, h3,
+        h4, h5, h6 {
+            a {
+                color: $luigi-blue;
+            }
+        }
     }
 
     &--dark {

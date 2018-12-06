@@ -1,0 +1,21 @@
+---
+layout: page-newsletter
+title: Newsletter
+---
+
+<h1 class="u-text-center">LFGG Newsletter</h1>
+
+<div class="o-wrapper o-wrapper--small u-margin-bottom-large">
+    <p>We periodically post updates on events within the community, new fangames, affiliates, etc. You can find them all here. If you just can't get enough of us, you can subscribe to be alerted whenever a new post is made.</p>
+    <div class="u-text-center">
+        <a class="c-btn" href="#subscribe">Subscribe Now</a>
+    </div>
+</div>
+
+<ul class="o-grid o-grid--large u-margin-bottom-none">
+    {% for post in site.categories.newsletter %}
+        <li class="o-grid__cell u-1/1 u-1/2@desktop">
+        {% include article-card.html title=post.title excerpt=post.excerpt url=post.url dark=true %}
+        </li>
+    {% endfor %}
+</ul>

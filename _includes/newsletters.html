@@ -1,19 +1,21 @@
 <section id="newsletters" class="c-section c-section--secondary">
     <div class="o-wrapper">
         <h2 class="c-section__title u-h1">
-            From the Newsletter
+            Latest Posts
         </h2>
 
         <ul class="o-grid o-grid--large u-margin-bottom-none">
-            {% for post in site.categories.newsletter limit:3 %}
-                {% include article-card.html title=post.title excerpt=post.excerpt url=post.url %}
+            {% for post in site.categories.newsletter limit:4 %}
+                <li class="o-grid__cell u-1/1 u-1/2@desktop">
+                {% include article-card.html title=post.title excerpt=post.excerpt url=post.url dark=true %}
+                </li>
             {% endfor %}
         </ul>
 
         {% if include.viewmore %}
             <div class="u-text-center">
                 <a class="c-btn" href="/newsletter">
-                    View More
+                    View All Posts
                 </a>
             </div>
         {% endif %}

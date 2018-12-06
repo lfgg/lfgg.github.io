@@ -4,8 +4,6 @@
     margin-bottom: $spacing-large;
 
     &--single {
-        margin-bottom: 0;
-
         @include mq($from: desktop) {
             padding-left: $spacing-huge;
             padding-right: $spacing-huge;
@@ -44,8 +42,6 @@
         margin-bottom: 0;
         font-weight: 700;
         color: $luigi-gray-dark;
-
-        //@include inuit-font-size($inuit-font-size-h3);
     }
 
     &__signature {

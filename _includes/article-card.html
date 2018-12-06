@@ -1,9 +1,7 @@
-<li class="o-grid__cell u-1/1 u-1/2@desktop">
-    <article class="c-card c-card--dark c-card--equal-height">
-        <h3>{{ include.title }}</h3>
-        <div class="c-card__content">
-            {{ include.excerpt }}
-        </div>
-        <a class="c-btn" href="{{ include.url }}">Read now</a>
-    </article>
-</li>
+<article class="c-card {% if include.dark %}c-card--dark{% else %}c-card--light{% endif %} c-card--equal-height">
+    <h3><a href="{{ include.url }}">{{ include.title }}</a></h3>
+    <div class="c-card__content">
+        {{ include.excerpt }}
+    </div>
+    <a class="c-btn" href="{{ include.url }}">Read now</a>
+</article>

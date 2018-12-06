@@ -4,4 +4,9 @@ h4, h5, h6 {
     margin-bottom: $spacing;
     font-family: Delfino, Raleway, sans-serif;
     font-weight: 400;
+
+    a {
+        font-weight: 400;
+        color: inherit;
+    }
 }
