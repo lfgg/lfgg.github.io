@@ -38,6 +38,10 @@
         }
     }
 
+    &--important {
+        background: $luigi-blue-dark !important;
+    }
+
     &--centered {
         text-align: center;
 
