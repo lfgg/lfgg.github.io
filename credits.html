@@ -6,6 +6,39 @@ layout: page
     <div class="o-grid__cell u-1/1 u-2/3@tablet">
         <h1>Site Credits</h1>
         <p>The initial launch of Luigi's Fan Game Gallery was made possible by:</p>
+        <ul class="o-list-bare">
+            {% for person in site.data.credits %}
+                <li class="o-list-bare__item">
+                    <div class="c-card c-card--light c-credit">
+                        <div class="o-flag">
+                            <div class="o-flag__img">
+                                {% if person.url != "" %}<a href="{{ person.url }}">{% endif %}
+                                    <img alt="{{ person.name }}'s avatar"
+                                         src="{{ site.baseurl }}/assets/img/avatars/credits/{{ person.avatar }}"
+                                         class="c-credit__avatar"
+                                         width="100">
+                                {% if person.url != "" %}</a>{% endif %}
+                            </div>
+                            <div class="o-flag__body">
+                                <h2 class="c-credit__name">
+                                    {% if person.url != "" %}<a href="{{ person.url }}">{% endif %}
+                                        {{ person.name }}
+                                    {% if person.url != "" %}</a>{% endif %}
+                                </h2>
+                                <p class="c-credit__title">
+                                    {{ person.title }}
+                                </p>
+                                {% if person.url != "" %}
+                                    <a class="c-btn c-credit__btn" href="{{ person.url }}">
+                                        Website
+                                    </a>
+                                {% endif %}
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            {% endfor %}
+        </ul>
     </div>
 
     <div class="o-grid__cell u-1/1 u-1/3@tablet">

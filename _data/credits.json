@@ -1,0 +1,38 @@
+[
+    {
+        "name": "Mario",
+        "url": "",
+        "avatar": "mario.png",
+        "title": "Founder and Staff Member"
+    },
+    {
+        "name": "Spritanium",
+        "url": "https://keithpickering.github.io",
+        "avatar": "spritey.png",
+        "title": "Mainsite Developer and Designer"
+    },
+    {
+        "name": "Pedigree",
+        "url": "",
+        "avatar": "pedigree.png",
+        "title": "Policy Writer and Staff Member"
+    },
+    {
+        "name": "Mit",
+        "url": "https://miketona.carrd.co/",
+        "avatar": "mit.png",
+        "title": "Graphic Designer"
+    },
+    {
+        "name": "Syaxamaphone",
+        "url": "",
+        "avatar": "syax.png",
+        "title": "Staff Member"
+    },
+    {
+        "name": "Stir",
+        "url": "",
+        "avatar": "stir.png",
+        "title": "Policy Writer"
+    }
+]

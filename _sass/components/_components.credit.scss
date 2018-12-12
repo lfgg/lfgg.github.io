@@ -1,0 +1,28 @@
+.c-credit {
+    position: relative;
+    margin-bottom: $spacing;
+    padding: $spacing;
+
+    &__name {
+        margin-bottom: $spacing-tiny;
+        color: $luigi-blue;
+    }
+
+    &__title {
+        margin-bottom: 0;
+        color: $luigi-gray-dark;
+    }
+
+    &__avatar {
+    }
+
+    &__btn {
+        @include mq($from: tablet) {
+            position: absolute;
+            top: 50%;
+            margin-top: -$spacing;
+            right: $spacing;
+            padding: $spacing-small $spacing;
+        }
+    }
+}
