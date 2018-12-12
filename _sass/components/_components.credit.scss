@@ -17,6 +17,10 @@
     &__title {
         margin-bottom: $spacing;
         color: $luigi-gray-dark;
+
+        @include mq($from: desktop) {
+            margin-bottom: 0;
+        }
     }
 
     &__avatar,
