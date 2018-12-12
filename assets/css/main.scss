@@ -5,21 +5,21 @@
 $inuit-global-font-size: 18px;
 $inuit-global-font-size-mobile: 16px;
 $inuit-global-baseline: 7px;
-@import "../node_modules/inuitcss/settings/settings.core";
+@import "inuitcss/settings/settings.core";
 @import "settings/settings.global";
 @import "settings/settings.colors";
 
 // TOOLS
-@import "../node_modules/inuitcss/tools/tools.font-size";
-@import "../node_modules/inuitcss/tools/tools.clearfix";
-@import "../node_modules/inuitcss/tools/tools.hidden";
-@import "../node_modules/sass-mq/mq";
+@import "inuitcss/tools/tools.font-size";
+@import "inuitcss/tools/tools.clearfix";
+@import "inuitcss/tools/tools.hidden";
+@import "sass-mq/mq";
 
 // GENERIC
-@import "../node_modules/inuitcss/generic/generic.reset";
-@import "../node_modules/inuitcss/generic/generic.box-sizing";
-@import "../node_modules/inuitcss/generic/generic.normalize";
-@import "../node_modules/inuitcss/generic/generic.shared";
+@import "inuitcss/generic/generic.reset";
+@import "inuitcss/generic/generic.box-sizing";
+@import "inuitcss/generic/generic.normalize";
+@import "inuitcss/generic/generic.shared";
 @import "generic/generic.fonts";
 
 // ELEMENTS
@@ -29,30 +29,28 @@ $inuit-font-size-h3: 24px !default;
 $inuit-font-size-h4: 20px !default;
 $inuit-font-size-h5: 18px !default;
 $inuit-font-size-h6: 16px !default;
-@import "../node_modules/inuitcss/elements/elements.page";
-@import "../node_modules/inuitcss/elements/elements.headings";
+@import "inuitcss/elements/elements.page";
+@import "inuitcss/elements/elements.headings";
 @import "elements/elements.headings";
-@import "../node_modules/inuitcss/elements/elements.images";
-@import "../node_modules/inuitcss/elements/elements.tables";
+@import "inuitcss/elements/elements.images";
+@import "inuitcss/elements/elements.tables";
 @import "elements/elements.page";
 @import "elements/elements.links";
 @import "elements/elements.forms";
 @import "elements/elements.hr";
 
 // OBJECTS
-@import "../node_modules/inuit-flexgrid/objects/objects.grid";
+@import "inuit-flexgrid/objects/objects.grid";
 @import "objects/objects.grid";
-@import "../node_modules/inuitcss/objects/objects.wrapper";
+@import "inuitcss/objects/objects.wrapper";
 @import "objects/objects.wrapper";
-@import "../node_modules/inuitcss/objects/objects.media";
-@import "../node_modules/inuitcss/objects/objects.flag";
-@import "../node_modules/inuitcss/objects/objects.list-bare";
-@import "../node_modules/inuitcss/objects/objects.list-inline";
-@import "../node_modules/inuitcss/objects/objects.box";
-@import "../node_modules/inuitcss/objects/objects.block";
-@import "../node_modules/inuitcss/objects/objects.table";
-//@import "../node_modules/inuitcss/objects/objects.crop";
-//@import "../node_modules/inuitcss/objects/objects.pack";
+@import "inuitcss/objects/objects.media";
+@import "inuitcss/objects/objects.flag";
+@import "inuitcss/objects/objects.list-bare";
+@import "inuitcss/objects/objects.list-inline";
+@import "inuitcss/objects/objects.box";
+@import "inuitcss/objects/objects.block";
+@import "inuitcss/objects/objects.table";
 @import "objects/objects.nav";
 
 // COMPONENTS
@@ -73,9 +71,9 @@ $inuit-font-size-h6: 16px !default;
 @import "components/components.page-foot";
 
 // UTILITIES
-@import "../node_modules/inuitcss/utilities/utilities.widths";
-@import "../node_modules/inuitcss/utilities/utilities.headings";
-@import "../node_modules/inuitcss/utilities/utilities.spacings";
+@import "inuitcss/utilities/utilities.widths";
+@import "inuitcss/utilities/utilities.headings";
+@import "inuitcss/utilities/utilities.spacings";
 $inuit-responsive-spacing-directions: (
   null: null,
   "-bottom": "-bottom",
@@ -84,43 +82,7 @@ $inuit-responsive-spacing-properties: (
   "margin": "margin",
 );
 $inuit-responsive-spacing-sizes: $inuit-spacing-sizes !default;
-@import "../node_modules/inuitcss/utilities/utilities.responsive-spacings";
-@import "../node_modules/inuitcss/utilities/utilities.hide";
+@import "inuitcss/utilities/utilities.responsive-spacings";
+@import "inuitcss/utilities/utilities.hide";
 @import "utilities/utilities.text";
 @import "utilities/utilities.transitions";
-
-
-
-/*.c-parallax {
-    position: absolute;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    padding: $spacing-large $spacing;
-    z-index: -1;
-    top: 0;
-    right: 0;
-    left: 0;
-    min-height: 100vh;
-
-    &__item {
-        margin: -$spacing-large 0;
-        width: 33vw;
-        height: 33vw;
-        background: url(/assets/img/parallax/mushroom.svg) no-repeat center center / contain;
-        opacity: 0.025;
-        z-index: -1;
-
-        &:nth-child(even) {
-            align-self: flex-start;
-        }
-
-        &:nth-child(odd) {
-            align-self: flex-end;
-        }
-
-        &:nth-child(2) {
-            background-image: url(/assets/img/parallax/flower.svg);
-        }
-    }
-}*/
