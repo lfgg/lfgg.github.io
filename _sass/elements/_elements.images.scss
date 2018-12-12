@@ -1,0 +1,19 @@
+img.lazy {
+    display: block;
+    border: 0;
+    opacity: 0;
+}
+
+img.lazy:not(.initial) {
+    transition: opacity 400ms;
+}
+
+img.lazy.initial,
+img.lazy.loaded,
+img.lazy.error {
+    opacity: 1;
+}
+
+img.lazy:not([src]) {
+    visibility: hidden;
+}   

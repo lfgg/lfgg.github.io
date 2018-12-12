@@ -14,8 +14,8 @@ layout: page
                             <div class="o-flag__img">
                                 {% if person.url != "" %}<a href="{{ person.url }}">{% endif %}
                                     <img alt="{{ person.name }}'s avatar"
-                                         src="{{ site.baseurl }}/assets/img/avatars/credits/{{ person.avatar }}"
-                                         class="c-credit__avatar"
+                                         data-src="{{ site.baseurl }}/assets/img/avatars/credits/{{ person.avatar }}"
+                                         class="c-credit__avatar lazy"
                                          width="50" height="50">
                                 {% if person.url != "" %}</a>{% endif %}
                             </div>

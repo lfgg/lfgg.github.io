@@ -56,42 +56,21 @@ const Page = {
             // Hide mobile menu
             Nav.close();
 
-            // Show loader if page load takes a bit
-            //this.elems.loader.style.opacity = 0;
-            //setTimeout(() => {
-            //    if (document.documentElement.classList.contains('is-animating')) {
-                    // Replace loader so animation restarts
-                    let newLoader = this.elems.loader.cloneNode(true);
-                    this.elems.loader.parentNode.replaceChild(newLoader, this.elems.loader);
-                    this.elems.loader = newLoader;
-            //        this.elems.loader.style.opacity = 1;
-            //    } else {
-            //        this.elems.loader.style.opacity = 0;
-            //    }
-            //}, 1000);
+            let newLoader = this.elems.loader.cloneNode(true);
+            this.elems.loader.parentNode.replaceChild(newLoader, this.elems.loader);
+            this.elems.loader = newLoader;
         });
-
-        /*swup.on('animationInDone', () => {
-            this.elems.loader.style.opacity = 0;
-        });*/
 
         window.addEventListener('load', () => {
             setTimeout(() => {
                 document.documentElement.classList.remove('is-animating', 'is-preload');
             }, 500);
         });
+
+        var myLazyLoad = new LazyLoad({
+            elements_selector: '.lazy',
+            load_delay: 500
+        });
     }
 }
 Page.init();
-
-
-const Parallax = {
-    settings: {
-        speed: -6
-    },
-
-    init: function() {
-        var rellax = new Rellax('.c-parallax__item', this.settings);
-    }
-}
-Parallax.init();
