@@ -2,9 +2,6 @@ img.lazy {
     display: block;
     border: 0;
     opacity: 0;
-}
-
-img.lazy:not(.initial) {
     transition: opacity 400ms;
 }
 
