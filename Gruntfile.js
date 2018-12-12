@@ -63,6 +63,11 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-concat');
   grunt.loadNpmTasks('grunt-contrib-uglify-es');
   grunt.loadNpmTasks('grunt-contrib-watch');
+
+  // The copy task automatically copies inuitCSS and other dependencies whenever
+  // they are updated or changed. Since node_modules is ignored by GitHub we have
+  // to include these dependencies in the _sass folder, but this way we can still
+  // keep them updated with npm.
   grunt.loadNpmTasks('grunt-contrib-copy');
 
   // Default task.
