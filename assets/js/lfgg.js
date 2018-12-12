@@ -73,6 +73,16 @@ const Page = {
             this.elems.loader = newLoader;
         });
 
+        swup.on('contentReplaced', () => {
+            let lazyImgs = document.querySelectorAll('.lazy.initial');
+            lazyImgs.forEach((el) => {
+                el.classList.remove('loaded');
+                el.classList.remove('initial');
+                el.classList.remove('loading');
+                el.setAttribute('data-was-processed', '');
+            });
+        });
+
         swup.on('animationInDone', () => {
             LazyLoadHandler.init();
         });
