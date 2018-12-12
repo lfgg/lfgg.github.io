@@ -9,15 +9,20 @@
     }
 
     &__title {
-        margin-bottom: 0;
+        margin-bottom: $spacing;
         color: $luigi-gray-dark;
+
+        @include mq($from: desktop) {
+            margin-bottom: 0;
+        }
     }
 
     &__avatar {
+        border-radius: $global-radius;
     }
 
     &__btn {
-        @include mq($from: tablet) {
+        @include mq($from: desktop) {
             position: absolute;
             top: 50%;
             margin-top: -$spacing;
