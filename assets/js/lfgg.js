@@ -46,8 +46,7 @@ const LazyLoadHandler = {
 
     init: function() {
         this.lazyLoad = new LazyLoad({
-            elements_selector: '.lazy',
-            load_delay: 500
+            elements_selector: '.lazy'
         });
     }
 }
