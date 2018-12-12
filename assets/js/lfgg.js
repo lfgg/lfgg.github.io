@@ -41,6 +41,19 @@ const Nav = {
 Nav.init();
 
 
+const LazyLoadHandler = {
+    lazyLoad: null,
+
+    init: function() {
+        this.lazyLoad = new LazyLoad({
+            elements_selector: '.lazy',
+            load_delay: 500
+        });
+    }
+}
+LazyLoadHandler.init();
+
+
 const Page = {
     elems: {
         loader: document.querySelector('#loader')
@@ -61,15 +74,14 @@ const Page = {
             this.elems.loader = newLoader;
         });
 
+        swup.on('animationInDone', () => {
+            LazyLoadHandler.init();
+        });
+
         window.addEventListener('load', () => {
             setTimeout(() => {
                 document.documentElement.classList.remove('is-animating', 'is-preload');
             }, 500);
-        });
-
-        var myLazyLoad = new LazyLoad({
-            elements_selector: '.lazy',
-            load_delay: 500
         });
     }
 }
