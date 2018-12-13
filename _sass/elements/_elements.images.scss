@@ -1,17 +1,17 @@
-img.lazy {
+.lazy {
     display: block;
     border: 0;
     opacity: 0;
     max-width: 100%;
     height: auto;
 }
-img.lazy {
+.lazy {
     transition: opacity 400ms !important;
 }
-img.lazy.loaded,
-img.lazy.error {
+.lazy.loaded,
+.lazy.error {
     opacity: 1;
 }
-img.lazy:not([src]) {
+.lazy:not([src]) {
     visibility: hidden;
 }
