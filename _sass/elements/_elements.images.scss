@@ -1,3 +1,8 @@
+img[width],
+img[height] {
+    max-width: 100%;
+}
+
 .lazy {
     display: block;
     border: 0;
