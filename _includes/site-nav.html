@@ -1,17 +1,17 @@
 <nav id="site-nav" class="c-site-nav">
-    <a class="c-site-nav__item" href="/">
+    <a class="c-site-nav__item" href="{{ site.baseurl }}">
         Home
     </a>
-    <a class="c-site-nav__item" href="/about">
+    <a class="c-site-nav__item" href="{{ site.baseurl }}/about">
         About
     </a>
-    <a class="c-site-nav__item" href="/newsletter">
+    <a class="c-site-nav__item" href="{{ site.baseurl }}/newsletter">
         Newsletter
     </a>
-    <a class="c-site-nav__item" href="https://lfgg.jcink.net/">
+    <a class="c-site-nav__item" href="{{ site.data.settings.links.forum }}">
         Forum
     </a>
-    <a class="c-site-nav__item c-site-nav__item--icon" href="/">
+    <a class="c-site-nav__item c-site-nav__item--icon" href="{{ site.data.settings.links.twitter }}">
         <i class="c-icon c-icon--twitter">
             {% include icons/icon-twitter.svg %}
         </i>

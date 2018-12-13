@@ -1,6 +1,11 @@
 {
     "links": {
         "forum":   "https://lfgg.jcink.net",
-        "discord": "https://discord.gg/W2P3eD5"
+        "discord": "https://discord.gg/W2P3eD5",
+        "twitter": "https://twitter.com/OfficialLFGG"
+    },
+    "strings": {
+        "forum":   "A great place to have longer and more in depth discussions, especially great for showcasing your work in a place where you can gain feedback steadily over time, allow members to subscribe to your thread for news updates and participate in longer term events.",
+        "discord": "A great place for immediate interaction in a faster paced environment, especially great if you need to get immediate thoughts on your works here. You may also organize multiplayer sessions and participate in voice chat."
     }
 }
