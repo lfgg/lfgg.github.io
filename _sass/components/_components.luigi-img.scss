@@ -6,6 +6,7 @@
 
     @include mq($from: tablet) {
         display: inline;
+        width: 100%;
         max-width: 100%;
     }
 }
