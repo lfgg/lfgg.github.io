@@ -85,7 +85,7 @@ const Page = {
         });
 
         swup.on('contentReplaced', () => {
-            let lazyImgs = document.querySelectorAll('.lazy.initial');
+            let lazyImgs = document.querySelectorAll('.lazy');
             lazyImgs.forEach((el) => {
                 el.classList.remove('loaded');
                 el.classList.remove('initial');
@@ -96,6 +96,16 @@ const Page = {
 
         swup.on('animationInDone', () => {
             LazyLoadHandler.init();
+        });
+
+        // Back button 
+        swup.on('popState', () => {
+            setTimeout(function() {
+                let lazyImgs = document.querySelectorAll('.lazy');
+                lazyImgs.forEach((el) => {
+                    el.classList.add('loaded');
+                });
+            }, 100);
         });
 
         window.addEventListener('load', () => {
