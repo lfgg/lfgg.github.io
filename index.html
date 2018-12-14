@@ -30,44 +30,7 @@ title: Home
             </div>
         </div>
 
-        <div class="o-grid o-grid--large">
-            <div class="o-grid__cell u-1/1 u-1/2@tablet">
-                <article class="c-card c-card--equal-height c-card--dark c-card--centered c-promo u-transition-zoom u-transition-zoom--left">
-                    <h2 class="c-promo__title">
-                        <i class="c-icon c-icon--emblem">
-                            {% include icons/icon-forum.svg %}
-                        </i>
-                        <a href="{{ site.data.settings.links.forum }}">
-                            The Forum
-                        </a>
-                    </h2>
-                    <p class="c-card__content c-promo__content">
-                        {{ site.data.settings.strings.forum }}
-                    </p>
-                    <a class="c-btn c-btn--large" href="{{ site.data.settings.links.forum }}">
-                        Let&rsquo;s-a-Go
-                    </a>
-                </article>
-            </div>
-            <div class="o-grid__cell u-1/1 u-1/2@tablet">
-                <article class="c-card c-card--equal-height c-card--dark c-card--centered c-promo c-promo--important u-transition-zoom u-transition-zoom--right">
-                    <h2 class="c-promo__title">
-                        <i class="c-icon c-icon--emblem">
-                            {% include icons/icon-discord.svg %}
-                        </i>
-                        <a href="{{ site.data.settings.links.discord }}">
-                            The Discord
-                        </a>
-                    </h2>
-                    <p class="c-card__content c-promo__content">
-                        {{ site.data.settings.strings.discord }}
-                    </p>
-                    <a class="c-btn c-btn--large" href="{{ site.data.settings.links.discord }}">
-                        Let&rsquo;s-a-Go
-                    </a>
-                </article>
-            </div>
-        </div>
+        {% include main-links.html %}
     </div>
 </section>
 
