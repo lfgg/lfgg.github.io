@@ -1,5 +1,5 @@
 html {
-    font-family: Raleway, sans-serif;
+    font-family: $global-font-family;
     font-size: ($inuit-global-font-size-mobile / 16px) * 1em;
     line-height: $inuit-global-line-height / $inuit-global-font-size;
     color: $luigi-white;
