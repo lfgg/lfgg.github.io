@@ -25,3 +25,5 @@ We may be most interested in sharing fan works and discussing game development, 
 <img src="http://lfgg.github.io/assets/img/luigi/teamwork.png" width="50%" height="50%"/>
 <h2>Why Luigi?</h2>
 Luigi is underrated and constantly overshadowed by his more popular brother, but Luigi still stays true to his own colors and even goes on his own adventures! He may be Player 2, but much like official content and fan-made content, he and Mario are better together! So who better to represent the symbiotic relationship between official content and its fans than Luigi?
+
+So join us and share your work to your heart's content! We look forward to seeing what each and every one of you has to offer!
