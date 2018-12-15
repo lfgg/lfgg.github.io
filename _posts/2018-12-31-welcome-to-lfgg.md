@@ -14,7 +14,7 @@ Inspired by our lengthy time over the years in the Mario fan games community, Ma
 
 Our mission is to preserve and further develop the art of fan games. With our wide variety of skills and passions, we aim to bring each other's projects to life!
 
-<img src="http://lfgg.github.io/assets/img/luigi/looking.png"/> ![](http://lfgg.github.io/assets/img/luigi/looking.png)
+<img src="http://lfgg.github.io/assets/img/luigi/looking.png"/>
 <h2>Looking for fan content and resources to feature!</h2>
 We are looking to feature fellow fans and their content in our community and our newsletter whether it be pixel art, their first Mario platformer or their latest build of their Metroidvania project! Not only that, but we aim to share game development resources and tutorials by you and our affiliates!
 
