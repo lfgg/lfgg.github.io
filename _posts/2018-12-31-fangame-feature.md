@@ -1,13 +1,11 @@
 ---
 layout: article
-title: Luigi's day at the DMV
-categories: [diary]
+title: Fangame Feature
+categories: [fangames]
 excerpt_separator: <!--more-->
 ---
 
-Dear Diary,
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut nec aliquam mi. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Fusce sollicitudin, est eu elementum venenatis, turpis ipsum mollis dui, at scelerisque massa lectus sed turpis. Vivamus quam massa, tempor non mauris non, varius fringilla lorem. Vestibulum non massa et nulla porttitor bibendum vitae laoreet tortor.
+This is a fangame article.
 
 <!--more-->
 

@@ -1,0 +1,39 @@
+.c-filters {
+    margin-bottom: $spacing + $spacing-small;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    > p {
+        text-transform: uppercase;
+        font-weight: 700;
+        margin-right: $spacing;
+        margin-bottom: $spacing-small;
+    }
+
+    &__filter {
+        margin-right: $spacing;
+        margin-bottom: $spacing-small;
+        padding: $spacing-small $spacing;
+        text-transform: uppercase;
+        font-weight: 700;
+        border: 0;
+        border-radius: $global-radius;
+        outline: 0;
+        color: $luigi-white;
+        background: $luigi-blue-dark;
+        cursor: pointer;
+        transition: background 400ms;
+
+        &:hover,
+        &:focus {
+            background: lighten($luigi-blue-dark, 3%);
+        }
+
+        &--active {
+            background: $luigi-green-light !important;
+        }
+    }
+}

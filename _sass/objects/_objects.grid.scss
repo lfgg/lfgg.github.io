@@ -4,10 +4,17 @@
     }
 
     &__cell {
+        transition: all 400ms ease-in-out;
+
         &--switch-mobile {
             @include mq($until: tablet) {
                 order: -1;
             }
+        }
+
+        &.is-hidden {
+            transform: scale(0.9);
+            opacity: 0;
         }
     }
 

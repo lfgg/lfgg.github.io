@@ -1,7 +1,7 @@
 ---
 layout: article
 title: Welcome to LFGG!
-categories: [newsletter]
+categories: [updates]
 excerpt_separator: <!--more-->
 ---
 

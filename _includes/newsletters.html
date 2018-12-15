@@ -5,9 +5,9 @@
         </h2>
 
         <ul class="o-grid o-grid--large u-margin-bottom-none">
-            {% for post in site.categories.newsletter limit:4 %}
+            {% for post in site.posts limit:4 %}
                 <li class="o-grid__cell u-1/1 u-1/2@desktop">
-                {% include article-card.html title=post.title excerpt=post.excerpt url=post.url dark=true %}
+                {% include article-card.html post=post dark=false %}
                 </li>
             {% endfor %}
         </ul>

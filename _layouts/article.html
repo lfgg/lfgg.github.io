@@ -21,9 +21,9 @@ layout: default
                 <aside class="c-related-posts">
                     <h2 class="u-margin-bottom-large u-text-center u-h1">Related Posts</h2>
                     <div class="o-grid o-grid--large">
-                        {% for post in site.categories.newsletter limit:2 %}
+                        {% for post in site.categories.[page.category] limit:2 %}
                         <section class="o-grid__cell u-1/1 u-1/2@desktop">
-                        {% include article-card.html title=post.title excerpt=post.excerpt url=post.url dark=true %}
+                        {% include article-card.html post=post dark=true %}
                         </section>
                         {% endfor %}
                     </div>

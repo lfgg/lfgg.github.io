@@ -9,6 +9,11 @@
         padding: $spacing-large;
     }
 
+    &__meta {
+        font-weight: 700;
+        color: $luigi-gray-dark;
+    }
+
     &__content {
         margin-bottom: $spacing-large;
     }
@@ -52,5 +57,25 @@
 
     &--equal-height {
         height: calc(100% - #{$spacing-large});
+    }
+
+    &--excerpt {
+        display: flex;
+        flex-direction: column;
+        transition: all 400ms ease-in-out;
+
+        &.is-hidden {
+            opacity: 0;
+            transform: scale(0.9);
+        }
+
+        .c-btn {
+            margin-top: auto;
+        }
+
+        h1, h2, h3,
+        h4, h5, h6 {
+            margin-bottom: $spacing-tiny;
+        }
     }
 }

@@ -12,10 +12,21 @@ title: Newsletter
     </div>
 </div>
 
+<hr>
+
+<div class="c-filters">
+    <p>Filter posts:</p>
+    {% for category in site.categories %}
+        <button class="c-filters__filter js-filter" data-category="{{ category[0] }}">
+            {{ category[0] | capitalize }}
+        </button>
+    {% endfor %}
+</div>
+
 <ul class="o-grid o-grid--large u-margin-bottom-none">
-    {% for post in site.categories.newsletter %}
+    {% for post in site.posts %}
         <li class="o-grid__cell u-1/1 u-1/2@desktop">
-        {% include article-card.html title=post.title excerpt=post.excerpt url=post.url dark=true %}
+        {% include article-card.html post=post dark=false %}
         </li>
     {% endfor %}
 </ul>
