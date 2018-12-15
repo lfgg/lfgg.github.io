@@ -1,6 +1,6 @@
 ---
 layout: article
-title: Welcome to LFGG!
+title: Luigi's Creative Carnival
 categories: [events]
 excerpt_separator: <!--more-->
 ---
