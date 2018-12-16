@@ -15,7 +15,7 @@ title: Newsletter
 <hr>
 
 <div class="c-filters">
-    <p>Filter posts:</p>
+    <p class="c-filters__label">Filter posts:</p>
     {% for category in site.categories %}
         <button class="c-filters__filter js-filter" data-category="{{ category[0] }}">
             {{ category[0] | capitalize }}

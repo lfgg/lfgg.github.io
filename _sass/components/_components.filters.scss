@@ -6,17 +6,22 @@
     justify-content: center;
     text-align: center;
 
-    > p {
+    &__label {
+        width: 100%;
         text-transform: uppercase;
         font-weight: 700;
-        margin-right: $spacing;
         margin-bottom: $spacing-small;
+
+        @include mq($from: tablet) {
+            width: auto;
+            margin-right: $spacing;
+        }
     }
 
     &__filter {
-        margin-right: $spacing;
+        margin-right: $spacing-small;
         margin-bottom: $spacing-small;
-        padding: $spacing-small $spacing;
+        padding: $spacing-small;
         text-transform: uppercase;
         font-weight: 700;
         border: 0;
@@ -26,10 +31,20 @@
         background: $luigi-blue-dark;
         cursor: pointer;
         transition: all 400ms;
+        @include inuit-font-size($inuit-font-size-h6);
+
+        @include mq($from: tablet) {
+            margin-right: $spacing;
+            padding: $spacing-small $spacing;
+        }
 
         &:hover,
         &:focus {
             background: lighten($luigi-blue-dark, 3%);
+        }
+
+        &:nth-last-child(2) {
+            margin-right: 0;
         }
 
         &.is-active {
@@ -37,15 +52,21 @@
         }
 
         &--clear {
+            overflow: hidden;
             opacity: 0;
-            padding: 0 $spacing-small;
-            height: 48px;
-            background: transparent;
+            margin-left: 0;
+            margin-right: 0;
+            padding: 0;
+            height: 56px;
+            width: 0;
+            text-align: center;
+            background: transparent !important;
             font-weight: 400;
-            @include inuit-font-size($inuit-font-size-h2, 48px);
+            @include inuit-font-size($inuit-font-size-h2, 56px);
 
             &.is-visible {
                 opacity: 1;
+                width: 56px;
             }
         }
     }
