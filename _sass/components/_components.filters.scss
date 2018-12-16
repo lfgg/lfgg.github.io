@@ -11,6 +11,7 @@
         text-transform: uppercase;
         font-weight: 700;
         margin-bottom: $spacing-small;
+        @include inuit-font-size($inuit-font-size-h6);
 
         @include mq($from: tablet) {
             width: auto;
