@@ -9,9 +9,14 @@
     }
 
     img {
-        width: $spacing-large;
-        height: $spacing-large;
+        width: $spacing;
+        height: $spacing;
         border-radius: 50%;
+
+        @include mq($from: tablet) {
+            width: $spacing-large;
+            height: $spacing-large;
+        }
     }
 
     &__author {

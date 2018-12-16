@@ -27,8 +27,8 @@
             position: absolute;
             bottom: 0;
             left: 50%;
-            margin-left: -25%;
-            width: 50%;
+            margin-left: -30%;
+            width: 60%;
             height: $spacing-tiny;
             background: $luigi-gray-light;
         }
@@ -39,6 +39,22 @@
     }
 
     &__meta {
+        margin: 0 auto;
+        max-width: 600px;
+        text-align: center;
+
+        .o-grid {
+            margin: 0 auto;
+        }
+
+        .c-meta {
+            text-align: left;
+            border-left: 2px solid $luigi-gray-light;
+            margin-right: -1px;
+        }
+    }
+
+    &__date {
         color: $luigi-gray-dark;
     }
 

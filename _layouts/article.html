@@ -9,20 +9,28 @@ layout: default
                 <article class="c-article c-article--single">
                     <header class="c-article__header">
                         <h1 class="c-article__title">{{ page.title }}</h1>
-                        <p class="c-article__meta">
-                            {{ page.date | date: '%B %d, %Y' }}
-                        </p>
-                        <div class="c-meta">
-                            {% assign author = site.data.authors[page.author] %}
-                            <div class="o-flag o-flag--small">
-                                <div class="o-flag__img">
-                                    <img alt="" src="{{ site.baseurl }}/assets/img/avatars/{{ author.avatar }}">
+                        <div class="c-article__meta">
+                            <div class="o-grid o-grid--large o-grid--middle">
+                                <div class="o-grid__item u-1/2">
+                                    <p class="c-article__date u-margin-bottom-none">
+                                        {{ page.date | date: '%B %d, %Y' }}
+                                    </p>
                                 </div>
-                                <div class="o-flag__body">
-                                    <strong class="c-meta__author">{{ author.name }}</strong>
-                                    in {{ page.categories[0] | capitalize }}
+                                <div class="o-grid__item u-1/2">
+                                    <div class="c-meta">
+                                        {% assign author = site.data.authors[page.author] %}
+                                        <div class="o-flag o-flag--small">
+                                            <div class="o-flag__img">
+                                                <img alt="" src="{{ site.baseurl }}/assets/img/avatars/{{ author.avatar }}">
+                                            </div>
+                                            <div class="o-flag__body">
+                                                <strong class="c-meta__author">{{ author.name }}</strong>
+                                                in {{ page.categories[0] | capitalize }}
+                                            </div>
+                                        </div>         
+                                    </div>
                                 </div>
-                            </div>         
+                            </div>
                         </div>
                     </header>
                     {{ content }}
@@ -30,16 +38,19 @@ layout: default
                         <img alt="Luigi waving" data-src="/assets/img/luigi/luigi-wave.svg" class="lazy">
                     </div>
                 </article>
-                <aside class="c-related-posts">
-                    <h2 class="u-margin-bottom-large u-text-center u-h1">Related Posts</h2>
-                    <div class="c-filter-posts">
-                        {% for post in site.posts limit:2 %}
-                            {% include article-card.html post=post %}
-                        {% endfor %}
-                    </div>
-                </aside>
             </div>
         </div>
+    </div>
+
+    <div class="o-wrapper">
+        <aside class="c-related-posts">
+            <h2 class="u-margin-bottom-large u-text-center u-h1">Related Posts</h2>
+            <div class="c-filter-posts">
+                {% for post in site.posts limit:2 %}
+                    {% include article-card.html post=post %}
+                {% endfor %}
+            </div>
+        </aside>
     </div>
 </section>
 
