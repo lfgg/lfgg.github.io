@@ -1,5 +1,4 @@
 .o-img-sticky {
-    position: -webkit-sticky;
-    position: sticky;
+    position: sticky !important;
     top: $spacing-large;
 }
