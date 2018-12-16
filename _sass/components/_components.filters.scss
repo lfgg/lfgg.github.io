@@ -32,7 +32,7 @@
             background: lighten($luigi-blue-dark, 3%);
         }
 
-        &--active {
+        &.is-active {
             background: $luigi-green-light !important;
         }
     }

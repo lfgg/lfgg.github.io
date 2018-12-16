@@ -41,6 +41,36 @@ const Nav = {
 Nav.init();
 
 
+const PostFilters = {
+    shuffleInstance = null,
+
+    init: function() {
+        var Shuffle = window.Shuffle;
+        var shuffleWrap = document.querySelector('.c-filter-posts');
+
+        this.shuffleInstance = new Shuffle(shuffleWrap, {
+          itemSelector: '.c-card'
+        });
+
+        const filters = document.querySelectorAll('.js-filter');
+        filters.forEach((filter) => {
+            filter.addEventListener('click', (e) => {
+                e.preventDefault();
+
+                filters.forEach((filter) => {
+                    filter.classList.remove('is-active');
+                });
+                filter.classList.add('is-active');
+
+                let cat = filter.getAttribute('data-category');
+                this.shuffleInstance.filter(cat);
+            });
+        });
+    }
+}
+PostFilters.init();
+
+
 const LazyLoadHandler = {
     lazyLoad: null,
 
