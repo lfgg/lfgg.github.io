@@ -91,7 +91,7 @@ layout: default
 
         <footer id="page-foot" class="c-page-foot u-transition-fade">
             <div class="o-wrapper">
-                <ul class="o-list-bare u-text-center">
+                <ul class="o-list-bare u-text-center u-margin-bottom">
                     <li class="o-list-bare__item">
                         <strong>The Nintendo content on this site has been used without permission.</strong>
                     </li>
@@ -101,6 +101,16 @@ layout: default
                     <li class="o-list-bare__item">
                         All other content &copy;LFGG. <a href="/credits">Site Credits</a>
                     </li>
+                </ul>
+
+                <ul class="o-list-inline u-text-center">
+                    {% for affiliate in site.data.affiliates %}
+                        <li class="o-list-inline__item u-margin-bottom-tiny u-margin-right-tiny">
+                            <a href="{{ affiliate.url }}">
+                                <img alt="{{ affiliate.title }}" src="{{ site.baseurl }}/assets/img/affiliates/{{ affiliate.banner }}">
+                            </a>
+                        </li>
+                    {% endfor %}
                 </ul>
             </div>
         </footer>
