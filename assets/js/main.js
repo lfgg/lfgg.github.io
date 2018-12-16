@@ -50,8 +50,8 @@ Nav.init();
 
 const PostFilters = {
     elems: {
-        filters: document.querySelectorAll('.js-filter'),
-        clearFilters: document.querySelector('.js-clear-filters')
+        filters: null,
+        clearFilters: null
     },
 
     shuffleInstance = null,
@@ -60,40 +60,44 @@ const PostFilters = {
         var Shuffle = window.Shuffle;
         var shuffleWrap = document.querySelector('.c-filter-posts');
 
-        this.shuffleInstance = new Shuffle(shuffleWrap, {
-          itemSelector: '.c-card'
-        });
+        if (shuffleWrap.length) {
+            this.shuffleInstance = new Shuffle(shuffleWrap, {
+              itemSelector: '.c-card'
+            });
 
-        this.elems.filters.forEach((filter) => {
-            filter.addEventListener('click', (e) => {
+            this.elems.filters = document.querySelectorAll('.js-filter');
+            this.elems.filters.forEach((filter) => {
+                filter.addEventListener('click', (e) => {
+                    e.preventDefault();
+
+                    this.elems.filters.forEach((filter) => {
+                        filter.classList.remove('is-active');
+                    });
+                    filter.classList.add('is-active');
+
+                    let cat = filter.getAttribute('data-category');
+                    this.shuffleInstance.filter(cat);
+
+                    // Show clear filters btn
+                    this.elems.clearFilters.classList.add('is-visible');
+                });
+            });
+
+            this.elems.clearFilters = document.querySelector('.js-clear-filters');
+            this.elems.clearFilters.addEventListener('click', (e) => {
                 e.preventDefault();
 
                 this.elems.filters.forEach((filter) => {
                     filter.classList.remove('is-active');
                 });
-                filter.classList.add('is-active');
 
-                let cat = filter.getAttribute('data-category');
-                this.shuffleInstance.filter(cat);
+                // Show all items
+                this.shuffleInstance.filter();
 
-                // Show clear filters btn
-                this.elems.clearFilters.classList.add('is-visible');
+                // Hide clear filters btn
+                this.elems.clearFilters.classList.remove('is-visible');
             });
-        });
-
-        this.elems.clearFilters.addEventListener('click', (e) => {
-            e.preventDefault();
-
-            this.elems.filters.forEach((filter) => {
-                filter.classList.remove('is-active');
-            });
-
-            // Show all items
-            this.shuffleInstance.filter();
-
-            // Hide clear filters btn
-            this.elems.clearFilters.classList.remove('is-visible');
-        });
+        }
     }
 }
 PostFilters.init();
@@ -143,6 +147,7 @@ const Page = {
 
         swup.on('animationInDone', () => {
             LazyLoadHandler.init();
+            PostFilters.init();
         });
 
         // Back button 
@@ -152,6 +157,8 @@ const Page = {
                 lazyImgs.forEach((el) => {
                     el.classList.add('loaded');
                 });
+
+                PostFilters.init();
             }, 100);
         });
 
