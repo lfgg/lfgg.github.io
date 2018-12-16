@@ -34,15 +34,19 @@
 
     &__title {
         color: $luigi-blue;
+
+        @include mq($from: desktop) {
+            @include inuit-font-size(64px);
+        }
     }
 
     &__meta {
         margin: 0 auto;
-        max-width: 600px;
         text-align: center;
         padding-top: $spacing-small;
         padding-bottom: $spacing-small;
         border-radius: $global-radius;
+        box-shadow: 0 $spacing-tiny/2 0 darken($luigi-gray-light, 8%);
         background: $luigi-gray-light;
 
         .o-grid {
@@ -54,16 +58,16 @@
             border-style: solid;
             border-color: darken($luigi-gray-light, 5%);
             border-width: 0;
-            border-top-width: $spacing-tiny/2;
-            padding-top: $spacing-small;
-            margin-top: $spacing-tiny;
+            border-bottom-width: $spacing-tiny/2;
+            padding-bottom: $spacing-tiny;
+            margin-bottom: $spacing-small;
 
             @include mq($from: tablet) {
-                border-top-width: 0;
-                border-left-width: $spacing-tiny/2;
-                padding-top: 0;
-                margin-top: 0;
-                margin-right: -$spacing-tiny/4;
+                border-bottom-width: 0;
+                border-right-width: $spacing-tiny/2;
+                padding-bottom: 0;
+                margin-bottom: 0;
+                margin-left: -$spacing-tiny/4;
             }
         }
     }

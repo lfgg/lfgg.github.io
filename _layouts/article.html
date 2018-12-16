@@ -12,11 +12,6 @@ layout: default
                         <div class="c-article__meta">
                             <div class="o-grid o-grid--large o-grid--middle">
                                 <div class="o-grid__item u-1/1 u-1/2@tablet">
-                                    <p class="c-article__date u-margin-bottom-none">
-                                        {{ page.date | date: '%B %d, %Y' }}
-                                    </p>
-                                </div>
-                                <div class="o-grid__item u-1/1 u-1/2@tablet">
                                     <div class="c-meta">
                                         {% assign author = site.data.authors[page.author] %}
                                         <div class="o-flag o-flag--small">
@@ -29,6 +24,11 @@ layout: default
                                             </div>
                                         </div>         
                                     </div>
+                                </div>
+                                <div class="o-grid__item u-1/1 u-1/2@tablet">
+                                    <p class="c-article__date u-margin-bottom-none">
+                                        {{ page.date | date: '%B %d, %Y' }}
+                                    </p>
                                 </div>
                             </div>
                         </div>
