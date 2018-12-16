@@ -1,0 +1,10 @@
+[
+    {
+        "title"       : "Minus World",
+        "url"         : "https://minus.world",
+        "logo"        : "minus-world/logo.svg",
+        "banner"      : "minus-world/banner.png",
+        "color"       : "#132934",
+        "description" : "This is a description of Minus World blah blah blah"
+    }
+]

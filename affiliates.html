@@ -1,0 +1,26 @@
+---
+layout: page
+title: Affiliates
+---
+
+<h1 class="u-text-center u-margin-bottom-large">Affiliates</h1>
+
+{% for affiliate in site.data.affiliates %}
+    <div class="o-flag c-affiliate">
+        <div class="o-flag__img c-affiliate__img" style="background-color:{{ affiliate.color }}">
+            <a href="{{ affiliate.url }}">
+                <img alt="" src="{{ site.baseurl }}/assets/img/affiliates/{{ affiliate.logo }}">
+            </a>
+        </div>
+
+        <div class="o-flag__body c-affiliate__body">
+            <h2>{{ affiliate.title }}</h2>
+            <p>
+                {{ affiliate.description }}
+            </p>
+            <a href="{{ affiliate.url }}" class="c-btn">
+                Visit {{ affiliate.title }}
+            </a>
+        </div>
+    </div>
+{% endfor %}

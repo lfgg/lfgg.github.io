@@ -41,50 +41,6 @@ const Nav = {
 Nav.init();
 
 
-const Filters = {
-    elems: {
-        posts: document.querySelectorAll('.js-post-card')
-    },
-
-    filterBy = function(category) {
-        this.elems.posts.forEach((post) => {
-            let postCat = post.getAttribute('data-category');
-            let parent = post.parentNode;
-
-            if (postCat != category) {
-                parent.style.width = 0;
-                setTimeout(() => {
-                    parent.style.display = 'none';
-                }, 400);
-            } else {
-                parent.style.display = 'block';
-                parent.classList.remove('is-hidden');
-            }
-        });
-    },
-
-    init: function() {
-        const filters = document.querySelectorAll('.js-filter');
-
-        filters.forEach((filter) => {
-            const category = filter.getAttribute('data-category');
-
-            filter.addEventListener('click', (e) => {
-                e.preventDefault();
-                this.filterBy(category);
-
-                filters.forEach((filter) => {
-                    filter.classList.remove('is-active');
-                });
-
-                filter.classList.add('is-active');
-            });
-        });
-    }
-}
-Filters.init();
-
-
 const LazyLoadHandler = {
     lazyLoad: null,
 

@@ -1,0 +1,28 @@
+.c-affiliate {
+    &__img {
+        padding: $spacing-large;
+        border-radius: $global-radius 0 0 $global-radius;
+        width: 350px;
+
+        img {
+            display: block;
+        }
+
+        @include mq($until: tablet) {
+            display: block;
+            margin: 0;
+            width: 100%;
+        }
+    }
+
+    &__body {
+        padding: $spacing-large;
+        background: $luigi-green-dark;
+        border-radius: 0 $global-radius $global-radius 0;
+
+        @include mq($until: tablet) {
+            display: block;
+            padding: $spacing;
+        }
+    }
+}
