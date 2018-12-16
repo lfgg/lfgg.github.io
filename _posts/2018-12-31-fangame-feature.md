@@ -2,12 +2,10 @@
 layout: article
 title: Fangame Feature
 categories: [fangames]
-excerpt_separator: <!--more-->
+author: spritanium
 ---
 
 This is a fangame article.
-
-<!--more-->
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut nec aliquam mi. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Fusce sollicitudin, est eu elementum venenatis, turpis ipsum mollis dui, at scelerisque massa lectus sed turpis. Vivamus quam massa, tempor non mauris non, varius fringilla lorem. Vestibulum non massa et nulla porttitor bibendum vitae laoreet tortor. Nulla volutpat libero sit amet enim fringilla, nec placerat ligula placerat. Nullam eu mi sed turpis pellentesque cursus faucibus tristique enim. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas massa ligula, pharetra a volutpat quis, laoreet sed tortor. Quisque turpis ipsum, posuere vitae consectetur in, ultricies sit amet diam. Aliquam porttitor ornare diam, viverra auctor metus elementum ut. Nunc tempor sapien non ultricies interdum. Phasellus fermentum nisi magna, sed congue tortor eleifend non. Duis hendrerit nisl eu elit maximus aliquam.
 

@@ -4,13 +4,11 @@
             Latest Posts
         </h2>
 
-        <ul class="o-grid o-grid--large u-margin-bottom-none">
-            {% for post in site.posts limit:4 %}
-                <li class="o-grid__cell u-1/1 u-1/2@desktop">
+        <div class="c-filter-posts">
+            {% for post in site.posts limit:2 %}
                 {% include article-card.html post=post dark=false %}
-                </li>
             {% endfor %}
-        </ul>
+        </div>
 
         {% if include.viewmore %}
             <div class="u-text-center">

@@ -1,10 +1,23 @@
-<article class="c-card c-card--excerpt {% if include.post.dark %}c-card--dark{% else %}c-card--light{% endif %} c-card--equal-height js-post-card" data-category="{{ post.categories[0] }}">
-    <h3><a href="{{ include.post.url }}">{{ include.post.title }}</a></h3>
-    <p class="c-card__meta">
-        {{ include.post.date | date: '%B %d, %Y' }}
-    </p>
-    <div class="c-card__content">
-        {{ include.post.excerpt }}
-    </div>
-    <a class="c-btn c-btn--secondary" href="{{ include.post.url }}">Read now</a>
+<article class="c-card c-card--excerpt {% if include.post.dark %}c-card--dark{% else %}c-card--light{% endif %}" data-category="{{ post.categories[0] }}">
+    <a href="{{ include.post.url }}" class="c-card--excerpt__link">
+        <h3 class="u-h2">{{ include.post.title }}</h3>
+        <p class="c-card--excerpt__date">
+            {{ include.post.date | date: '%B %d, %Y' }}
+        </p>
+        <div class="c-card__content">
+            {{ include.post.excerpt }}
+        </div>
+        <div class="c-meta">
+            {% assign author = site.data.authors[include.post.author] %}
+            <div class="o-flag o-flag--small">
+                <div class="o-flag__img">
+                    <img alt="" src="{{ site.baseurl }}/assets/img/avatars/{{ author.avatar }}">
+                </div>
+                <div class="o-flag__body">
+                    <strong class="c-meta__author">{{ author.name }}</strong>
+                    in {{ include.post.categories[0] | capitalize }}
+                </div>
+            </div>         
+        </div>
+    </a>
 </article>

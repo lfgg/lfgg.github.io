@@ -2,12 +2,10 @@
 layout: article
 title: Welcome to LFGG!
 categories: [updates]
-excerpt_separator: <!--more-->
+author: pedigree
 ---
 
 December was an exciting time for LFGG, mostly because LFGG was envisioned and created entirely within that month!
-
-<!--more-->
 
 <h2>What is Luigi's Fan Game Gallery?</h2>
 Inspired by our lengthy time over the years in the Mario fan games community, Mario Fan Games Galaxy, we wanted a place where we could engage with developers and enthusiasts beyond the Mario community and feature their works. We especially wanted to feature fan works from other Nintendo fan game communities who had vanished from the internet such as Metroid: Fan Mission and Zelda Fan Game Network. With your help, we can do that!

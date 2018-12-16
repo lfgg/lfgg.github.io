@@ -2,12 +2,10 @@
 layout: article
 title: Luigi's Creative Carnival
 categories: [events]
-excerpt_separator: <!--more-->
+author: pedigree
 ---
 
 To celebrate the launch of our open and inclusive fan game community, we cordially invite you to participate in a two week game jam to get the creative juices flowing!
-
-<!--more-->
 
 <h2>What is a game jam?</h2>
 A game jam is a game design marathon that typically has a tight time restriction ranging from 24 hours to 72 hours or more. Theming and rules vary wildly from one jam to the next but all have a focus on game design and teamwork with voting at the end to determine the best entry.

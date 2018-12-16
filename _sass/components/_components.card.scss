@@ -1,4 +1,5 @@
 .c-card {
+    position: relative;
     margin-bottom: $spacing-large;
     padding: $spacing;
     border-radius: $global-radius;
@@ -9,13 +10,12 @@
         padding: $spacing-large;
     }
 
-    &__meta {
-        font-weight: 700;
-        color: $luigi-gray-dark;
-    }
-
     &__content {
         margin-bottom: $spacing-large;
+
+        p:last-child {
+            margin-bottom: 0;
+        }
     }
 
     &--light {
@@ -60,22 +60,52 @@
     }
 
     &--excerpt {
-        display: flex;
-        flex-direction: column;
+        padding: 0;
         transition: all 400ms ease-in-out;
+        text-align: center;
 
         &.is-hidden {
             opacity: 0;
             transform: scale(0.9);
         }
 
-        .c-btn {
-            margin-top: auto;
-        }
-
         h1, h2, h3,
         h4, h5, h6 {
             margin-bottom: $spacing-tiny;
+            color: $luigi-blue;
+        }
+
+        &__date {
+            color: $luigi-gray-dark;
+        }
+
+        &__link {
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+            padding: $spacing;
+            font-weight: inherit;
+            color: inherit;
+
+            @include mq($from: tablet) {
+                padding-top: $spacing-large;
+                padding-left: $spacing-large;
+                padding-right: $spacing-large;
+            }
+        }
+
+        .c-meta {
+            margin-top: auto;
+            margin-left: -$spacing-large;
+            margin-right: -$spacing-large;
+            margin-bottom: -$spacing;
+            border-radius: 0 0 $global-radius $global-radius;
+            text-align: center;
+            padding-top: $spacing;
+            padding-right: $spacing-large;
+            padding-bottom: $spacing;
+            padding-left: $spacing-large;
+            background: $luigi-gray-light;
         }
     }
 }

@@ -1,0 +1,14 @@
+{
+    "pedigree": {
+        "name": "Pedigree",
+        "avatar": "pedigree.png"
+    },
+    "spritanium": {
+        "name": "Spritanium",
+        "avatar": "spritey.png"
+    },
+    "syaxamaphone": {
+        "name": "Syaxamaphone",
+        "avatar": "syax.png"
+    },
+}

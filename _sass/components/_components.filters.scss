@@ -37,3 +37,18 @@
         }
     }
 }
+
+.c-filter-posts {
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -$spacing-large;
+
+    > .c-card {
+        margin-right: $spacing-large;
+
+        @include mq($from: desktop) {
+            width: calc(50% - #{$spacing-large});
+        }
+    }
+}

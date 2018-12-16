@@ -12,6 +12,18 @@ layout: default
                         <p class="c-article__meta">
                             {{ page.date | date: '%B %d, %Y' }}
                         </p>
+                        <div class="c-meta">
+                            {% assign author = site.data.authors[page.author] %}
+                            <div class="o-flag o-flag--small">
+                                <div class="o-flag__img">
+                                    <img alt="" src="{{ site.baseurl }}/assets/img/avatars/{{ author.avatar }}">
+                                </div>
+                                <div class="o-flag__body">
+                                    <strong class="c-meta__author">{{ author.name }}</strong>
+                                    in {{ page.categories[0] | capitalize }}
+                                </div>
+                            </div>         
+                        </div>
                     </header>
                     {{ content }}
                     <div class="c-article__signature">
@@ -20,11 +32,9 @@ layout: default
                 </article>
                 <aside class="c-related-posts">
                     <h2 class="u-margin-bottom-large u-text-center u-h1">Related Posts</h2>
-                    <div class="o-grid o-grid--large">
-                        {% for post in site.categories.[page.category] limit:2 %}
-                        <section class="o-grid__cell u-1/1 u-1/2@desktop">
-                        {% include article-card.html post=post dark=true %}
-                        </section>
+                    <div class="c-filter-posts">
+                        {% for post in site.posts limit:2 %}
+                            {% include article-card.html post=post %}
                         {% endfor %}
                     </div>
                 </aside>

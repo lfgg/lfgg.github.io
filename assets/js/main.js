@@ -58,7 +58,6 @@ const Filters = {
     },
 
     filterBy = function(category) {
-        console.log('filter by '+category);
         this.elems.posts.forEach((post) => {
             let postCat = post.getAttribute('data-category');
             let parent = post.parentNode;
@@ -84,6 +83,12 @@ const Filters = {
             filter.addEventListener('click', (e) => {
                 e.preventDefault();
                 this.filterBy(category);
+
+                filters.forEach((filter) => {
+                    filter.classList.remove('is-active');
+                });
+
+                filter.classList.add('is-active');
             });
         });
     }

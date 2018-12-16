@@ -1,0 +1,23 @@
+.c-meta {
+    color: $luigi-gray-dark;
+    @include inuit-font-size($inuit-font-size-h6);
+
+    .o-flag {
+        text-align: left;
+        width: auto;
+        margin: 0 auto;
+    }
+
+    img {
+        width: $spacing-large;
+        height: $spacing-large;
+        border-radius: 50%;
+    }
+
+    &__author {
+        display: block;
+        font-weight: 700;
+        color: $luigi-blue;
+        @include inuit-font-size($inuit-font-size-h4);
+    }
+}

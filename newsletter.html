@@ -23,10 +23,8 @@ title: Newsletter
     {% endfor %}
 </div>
 
-<ul class="o-grid o-grid--large u-margin-bottom-none">
+<div class="c-filter-posts">
     {% for post in site.posts %}
-        <li class="o-grid__cell u-1/1 u-1/2@desktop">
         {% include article-card.html post=post dark=false %}
-        </li>
     {% endfor %}
-</ul>
+</div>
