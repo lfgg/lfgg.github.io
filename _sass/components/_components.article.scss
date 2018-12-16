@@ -36,6 +36,7 @@
         color: $luigi-blue;
 
         @include mq($from: desktop) {
+            margin-bottom: $spacing-large;
             @include inuit-font-size(64px);
         }
     }
@@ -48,6 +49,11 @@
         border-radius: $global-radius;
         box-shadow: 0 $spacing-tiny/2 0 darken($luigi-gray-light, 8%);
         background: $luigi-gray-light;
+
+        @include mq($from: tablet) {
+            margin-left: -$spacing-large;
+            margin-right: -$spacing-large;
+        }
 
         .o-grid {
             margin: 0 auto;
@@ -90,5 +96,16 @@
     h1, h2, h3,
     h4, h5, h6 {
         color: $luigi-blue;
+    }
+
+    a {
+        color: $luigi-blue;
+
+        border-bottom: 2px solid $luigi-gray-light;
+
+        &:hover,
+        &:focus {
+            border-color: lighten($luigi-green-light, 15%);
+        }
     }
 }
