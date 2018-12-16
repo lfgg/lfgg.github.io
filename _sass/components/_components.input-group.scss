@@ -7,6 +7,7 @@
     &__text {
         flex: 1 1 auto;
         margin-bottom: 0 !important;
+        min-width: 0;
         position: relative;
         z-index: 1;
         border-radius: $global-radius 0 0 $global-radius !important;
@@ -15,5 +16,10 @@
     &__btn {
         flex: 0 1 auto;
         border-radius: 0 $global-radius $global-radius 0;
+
+        @include mq($until: tablet) {
+            padding-left: $spacing;
+            padding-right: $spacing;
+        }
     }
 }

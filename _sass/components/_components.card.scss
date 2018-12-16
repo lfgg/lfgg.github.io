@@ -101,15 +101,17 @@
             margin-bottom: -$spacing;
             border-radius: 0 0 $global-radius $global-radius;
             text-align: center;
-            padding-top: $spacing;
+            padding-top: $spacing-small;
             padding-right: $spacing-large;
-            padding-bottom: $spacing;
+            padding-bottom: $spacing-small;
             padding-left: $spacing-large;
             background: $luigi-gray-light;
 
             @include mq($from: tablet) {
                 margin-left: -$spacing-large;
                 margin-right: -$spacing-large;
+                padding-top: $spacing;
+                padding-bottom: $spacing;
             }
         }
     }
