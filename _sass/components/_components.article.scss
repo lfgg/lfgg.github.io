@@ -12,17 +12,14 @@
     }
 
     &__header {
-        position: relative;
-        padding-bottom: $spacing;
-        margin-bottom: $spacing-large;
-        
+        position: relative;        
         text-align: center;
 
         @include mq($from: tablet) {
             padding-bottom: $spacing-large;
         }
 
-        &:after {
+        /*&:after {
             content: '';
             position: absolute;
             bottom: 0;
@@ -31,7 +28,7 @@
             width: 60%;
             height: $spacing-tiny;
             background: $luigi-gray-light;
-        }
+        }*/
     }
 
     &__title {
@@ -42,6 +39,10 @@
         margin: 0 auto;
         max-width: 600px;
         text-align: center;
+        padding-top: $spacing-small;
+        padding-bottom: $spacing-small;
+        border-radius: $global-radius;
+        background: $luigi-gray-light;
 
         .o-grid {
             margin: 0 auto;
@@ -49,7 +50,7 @@
 
         .c-meta {
             text-align: left;
-            border-left: $spacing-tiny/2 solid $luigi-gray-light;
+            border-left: $spacing-tiny/2 solid darken($luigi-gray-light, 5%);
             margin-right: -$spacing-tiny/4;
         }
     }
