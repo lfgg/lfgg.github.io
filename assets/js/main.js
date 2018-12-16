@@ -60,12 +60,14 @@ const PostFilters = {
         var Shuffle = window.Shuffle;
         var shuffleWrap = document.querySelector('.c-filter-posts');
 
-        if (shuffleWrap.length) {
+        this.elems.filters = document.querySelectorAll('.js-filter');
+        this.elems.clearFilters = document.querySelector('.js-clear-filters');
+
+        if (this.elems.filters && this.elems.clearFilters) {
             this.shuffleInstance = new Shuffle(shuffleWrap, {
               itemSelector: '.c-card'
             });
 
-            this.elems.filters = document.querySelectorAll('.js-filter');
             this.elems.filters.forEach((filter) => {
                 filter.addEventListener('click', (e) => {
                     e.preventDefault();
@@ -83,7 +85,6 @@ const PostFilters = {
                 });
             });
 
-            this.elems.clearFilters = document.querySelector('.js-clear-filters');
             this.elems.clearFilters.addEventListener('click', (e) => {
                 e.preventDefault();
 
