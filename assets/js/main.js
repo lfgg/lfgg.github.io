@@ -49,6 +49,11 @@ Nav.init();
 
 
 const PostFilters = {
+    elems: {
+        filters: document.querySelectorAll('.js-filter'),
+        clearFilters: document.querySelector('.js-clear-filters')
+    },
+
     shuffleInstance = null,
 
     init: function() {
@@ -59,19 +64,35 @@ const PostFilters = {
           itemSelector: '.c-card'
         });
 
-        const filters = document.querySelectorAll('.js-filter');
-        filters.forEach((filter) => {
+        this.elems.filters.forEach((filter) => {
             filter.addEventListener('click', (e) => {
                 e.preventDefault();
 
-                filters.forEach((filter) => {
+                this.elems.filters.forEach((filter) => {
                     filter.classList.remove('is-active');
                 });
                 filter.classList.add('is-active');
 
                 let cat = filter.getAttribute('data-category');
                 this.shuffleInstance.filter(cat);
+
+                // Show clear filters btn
+                this.elems.clearFilters.classList.add('is-visible');
             });
+        });
+
+        this.elems.clearFilters.addEventListener('click', (e) => {
+            e.preventDefault();
+
+            this.elems.filters.forEach((filter) => {
+                filter.classList.remove('is-active');
+            });
+
+            // Show all items
+            this.shuffleInstance.filter();
+
+            // Hide clear filters btn
+            this.elems.clearFilters.classList.remove('is-visible');
         });
     }
 }

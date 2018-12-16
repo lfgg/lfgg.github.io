@@ -25,7 +25,7 @@
         color: $luigi-white;
         background: $luigi-blue-dark;
         cursor: pointer;
-        transition: background 400ms;
+        transition: all 400ms;
 
         &:hover,
         &:focus {
@@ -34,6 +34,19 @@
 
         &.is-active {
             background: $luigi-green-light !important;
+        }
+
+        &--clear {
+            opacity: 0;
+            padding: 0 $spacing-small;
+            height: 48px;
+            background: transparent;
+            font-weight: 400;
+            @include inuit-font-size($inuit-font-size-h2, 48px);
+
+            &.is-visible {
+                opacity: 1;
+            }
         }
     }
 }
