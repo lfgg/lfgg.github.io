@@ -51,8 +51,20 @@
 
         .c-meta {
             text-align: left;
-            border-left: $spacing-tiny/2 solid darken($luigi-gray-light, 5%);
-            margin-right: -$spacing-tiny/4;
+            border-style: solid;
+            border-color: darken($luigi-gray-light, 5%);
+            border-width: 0;
+            border-top-width: $spacing-tiny/2;
+            padding-top: $spacing-small;
+            margin-top: $spacing-tiny;
+
+            @include mq($from: tablet) {
+                border-top-width: 0;
+                border-left-width: $spacing-tiny/2;
+                padding-top: 0;
+                margin-top: 0;
+                margin-right: -$spacing-tiny/4;
+            }
         }
     }
 
