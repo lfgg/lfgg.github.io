@@ -49,8 +49,8 @@
 
         .c-meta {
             text-align: left;
-            border-left: 2px solid $luigi-gray-light;
-            margin-right: -1px;
+            border-left: $spacing-tiny/2 solid $luigi-gray-light;
+            margin-right: -$spacing-tiny/4;
         }
     }
 
