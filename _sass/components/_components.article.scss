@@ -12,11 +12,12 @@
     }
 
     &__header {
-        position: relative;        
+        position: relative;
+        margin-bottom: $spacing;
         text-align: center;
 
         @include mq($from: tablet) {
-            padding-bottom: $spacing-large;
+            margin-bottom: $spacing-large;
         }
 
         /*&:after {
