@@ -80,6 +80,13 @@
 
     &__date {
         color: $luigi-gray-dark;
+
+        .c-icon {
+            vertical-align: middle;
+            margin-top: -$spacing-tiny/2;
+            margin-right: $spacing-tiny;
+            fill: $luigi-gray-dark;
+        }
     }
 
     &__signature {
