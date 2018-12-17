@@ -10,7 +10,7 @@
         max-width: 200px;
 
         @include mq($from: tablet) {
-            max-width: 400px;
+            max-width: 320px;
         }
     }
 }
