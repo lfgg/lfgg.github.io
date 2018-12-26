@@ -8,12 +8,11 @@ author: pedigree
 To celebrate the launch of our open and inclusive fan game community, we cordially invite you to participate in a two week game jam to get the creative juices flowing!
 
 <h2>What is a game jam?</h2>
-A game jam is a game design marathon that typically has a tight time restriction ranging from 24 hours to 72 hours or more. Theming and rules vary wildly from one jam to the next but all have a focus on game design and teamwork with voting at the end to determine the best entry.
+A game jam is a game design marathon that typically has a tight time restriction ranging from 24 hours to 72 hours or more. Theming and rules vary wildly from one jam to the next but all have a focus on game design and teamwork with voting at the end to determine the best entry.</br>
 
 <h2>What are the specifics of Luigi's Creative Carnival?</h2>
 <b>When is the event active?</b>
 Luigi's Creative Carnival runs from Tuesday, January 1st 2019 to Tuesday, January 22nd 2019. Your project must be created within these dates and submitted by the 22nd to qualify.
-
 
 <b>What is the theme?</b>
 Luigi's Creative Carnival is, well, carnival themed. Your goal is to create a working prototype of a carnival game featuring your favorite video game characters or concepts. Creating a unique and fun combination will be key!
