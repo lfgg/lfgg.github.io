@@ -27,4 +27,4 @@ Yes, however there is only one prize available so you will have to work out who 
 The first place prize is a Game Maker Studio 2 Developer license valued at $99. The top three will also be featured in our newsletter with information about the developing teams and their projects.
 
 <b>How do I submit?</b>
-You may submit your project in the <a href="https://lfgg.jcink.net/index.php?showtopic=12">Luigi's Creative Carnival thread in the Project Patio on the Forums</a> and our game jam page on itch.io.
+You may submit your project in the <a href="https://lfgg.jcink.net/index.php?showtopic=12">Luigi's Creative Carnival thread in the Project Patio on the Forums</a> and <a href="https://itch.io/jam/luigis-creative-carnival">our game jam page on itch.io</a>.
