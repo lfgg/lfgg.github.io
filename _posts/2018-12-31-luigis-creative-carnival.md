@@ -12,7 +12,8 @@ A game jam is a game design marathon that typically has a tight time restriction
 
 <h2>What are the specifics of Luigi's Creative Carnival?</h2>
 <b>When is the event active?</b>
-Luigi's Creative Carnival runs from Tuesday, January 1st 2019 to Tuesday, January 22nd 2019. Your project must be created within these dates and submitted by the 15th to qualify.
+Luigi's Creative Carnival runs from Tuesday, January 1st 2019 to Tuesday, January 22nd 2019. Your project must be created within these dates and submitted by the 22nd to qualify.
+
 
 <b>What is the theme?</b>
 Luigi's Creative Carnival is, well, carnival themed. Your goal is to create a working prototype of a carnival game featuring your favorite video game characters or concepts. Creating a unique and fun combination will be key!
