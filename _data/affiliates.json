@@ -5,6 +5,7 @@
         "logo"        : "minus-world/logo.svg",
         "banner"      : "minus-world/banner.png",
         "color"       : "#132934",
+        "type"        : "Community"
         "description" : "A laid back entertainment and gaming community whose forum operates more like a game with spells and other snazzy features. Much of the community came from Mario Fan Games Galaxy before the community was split in half years ago by an administrative decision to attempt to force a focus on fan games.",
     },
     {
@@ -13,6 +14,7 @@
         "logo"        : "1up-world/1upworld.svg",
         "banner"      : "1up-world/banner.png",
         "color"       : "#2D43A8",
+        "type"        : "Community"
         "description" : "Welcome to 1-Up World! This is the official server for /r/Mario. This is a place where you can discuss all the latest games, news, events, creations, and more about the Super Mario series."
     }
 ]
