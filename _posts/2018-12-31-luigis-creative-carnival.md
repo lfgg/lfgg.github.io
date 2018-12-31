@@ -8,11 +8,11 @@ author: pedigree
 To celebrate the launch of our open and inclusive fan game community, we cordially invite you to participate in a two week game jam to get the creative juices flowing!
 
 <h2>What is a game jam?</h2>
-A game jam is a game design marathon that typically has a tight time restriction ranging from 24 hours to 72 hours or more. Theming and rules vary wildly from one jam to the next but all have a focus on game design and teamwork with voting at the end to determine the best entry.
+A game jam is a game design marathon that typically has a tight time restriction ranging from 24 hours to 72 hours or more. Theming and rules vary wildly from one jam to the next but all have a focus on game design and teamwork with voting at the end to determine the best entry.</br>
 
 <h2>What are the specifics of Luigi's Creative Carnival?</h2>
 <b>When is the event active?</b>
-Luigi's Creative Carnival runs from Tuesday, January 1st 2019 to Tuesday, January 15th 2019. Your project must be created within these dates and submitted by the 15th to qualify.
+Luigi's Creative Carnival runs from Tuesday, January 1st 2019 to Tuesday, January 22nd 2019. Your project must be created within these dates and submitted by the 22nd to qualify.
 
 <b>What is the theme?</b>
 Luigi's Creative Carnival is, well, carnival themed. Your goal is to create a working prototype of a carnival game featuring your favorite video game characters or concepts. Creating a unique and fun combination will be key!
@@ -27,4 +27,4 @@ Yes, however there is only one prize available so you will have to work out who 
 The first place prize is a Game Maker Studio 2 Developer license valued at $99. The top three will also be featured in our newsletter with information about the developing teams and their projects.
 
 <b>How do I submit?</b>
-You may submit your project in the <a href="https://lfgg.jcink.net/index.php?showtopic=12">Luigi's Creative Carnival thread in the Project Patio on the Forums</a> and our game jam page on itch.io.
+You may submit your project in the <a href="https://lfgg.jcink.net/index.php?showtopic=12">Luigi's Creative Carnival thread in the Project Patio on the Forums</a> and <a href="https://itch.io/jam/luigis-creative-carnival">our game jam page on itch.io</a>.
