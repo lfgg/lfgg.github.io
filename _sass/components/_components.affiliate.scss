@@ -1,6 +1,10 @@
 .c-affiliate {
-    margin-bottom: $spacing;
-    
+    margin-bottom: $spacing-large;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+
     &__img {
         padding: $spacing-large;
         border-radius: $global-radius 0 0 $global-radius;
@@ -28,5 +32,13 @@
             padding: $spacing;
             border-radius: 0 0 $global-radius $global-radius;
         }
+    }
+
+    &__type {
+        margin-bottom: $spacing-small;
+        font-family: "Delfino", sans-serif;
+        color: lighten($luigi-green-light, 10%);
+
+        @include inuit-font-size($inuit-font-size-h4);
     }
 }
