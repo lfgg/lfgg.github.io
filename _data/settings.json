@@ -1,11 +1,11 @@
 {
-    "links": {
-        "forum":   "https://lfgg.jcink.net",
-        "discord": "https://discord.gg/CKVRAwW",
-        "twitter": "https://twitter.com/OfficialLFGG"
-    },
-    "strings": {
-        "forum":   "A great place for long, in-depth discussions. Especially great for showcasing your work, gaining feedback steadily over time, allowing members to subscribe to your thread for news updates, and participating in longer-term events.",
-        "discord": "A great place for immediate interaction in a faster-paced environment. Especially great if you need to get immediate thoughts on something you&rsquo;ve made. You may also organize multiplayer sessions, or participate in a voice chat."
-    }
+  "links": {
+    "forum": "https://lfgg.jcink.net",
+    "discord": "https://discord.gg/VDAuruT",
+    "twitter": "https://twitter.com/OfficialLFGG"
+  },
+  "strings": {
+    "forum": "A great place for long, in-depth discussions. Especially great for showcasing your work, gaining feedback steadily over time, allowing members to subscribe to your thread for news updates, and participating in longer-term events.",
+    "discord": "A great place for immediate interaction in a faster-paced environment. Especially great if you need to get immediate thoughts on something you&rsquo;ve made. You may also organize multiplayer sessions, or participate in a voice chat."
+  }
 }
